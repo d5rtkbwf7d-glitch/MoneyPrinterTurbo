@@ -1366,6 +1366,11 @@ def create_edge_tts_communicate(
         locale, name = script_subtag_voice.groups()
         voice_name = f"Microsoft Server Speech Text to Speech Voice ({locale}, {name})"
 
+    # Route Edge TTS through the HTTPS proxy when one is set (aiohttp ignores proxy env vars).
+    _proxy = os.environ.get("HTTPS_PROXY") or os.environ.get("https_proxy")
+    if _proxy and "proxy" in communicate_signature.parameters:
+        communicate_kwargs["proxy"] = _proxy
+
     return edge_tts.Communicate(text, voice_name, **communicate_kwargs)
 
 
