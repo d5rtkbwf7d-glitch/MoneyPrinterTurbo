@@ -1,0 +1,199 @@
+[
+ {
+  "scene": "news",
+  "text": "If you turn on the news today, the message is pretty clear: unless you're earning six figures, winning the lottery, or inheriting a small fortune, buying a house is out of the question.",
+  "kick": null,
+  "params": {
+   "disclaimer": true
+  }
+ },
+ {
+  "scene": "host",
+  "text": "Except... that's not entirely true.",
+  "kick": null,
+  "params": {
+   "mood": "smile"
+  }
+ },
+ {
+  "scene": "xOverlay",
+  "text": "The problem isn't that you earn a median income. The problem is that most people try to buy a home using rules from twenty years ago.",
+  "kick": "THE REAL PROBLEM",
+  "params": {}
+ },
+ {
+  "scene": "oldRules",
+  "text": "If you save 10% of your paycheck at standard bank rates and wait until you have a 20% cash deposit for a dynamic inner-city property, you will get priced out.",
+  "kick": "OLD RULES",
+  "params": {}
+ },
+ {
+  "scene": "blueprint",
+  "text": "In this video, I'm giving you the exact step-by-step blueprint to go from a median income to holding the keys to your first home, without starving yourself or waiting until you're 60.",
+  "kick": "THE BLUEPRINT",
+  "params": {}
+ },
+ {
+  "scene": "step",
+  "text": null,
+  "kick": null,
+  "params": {
+   "num": 1,
+   "title": "FIX YOUR BORROWING CAPACITY FIRST",
+   "icon": "card"
+  },
+  "dur": 3.0
+ },
+ {
+  "scene": "borrowBars",
+  "text": "Step one is the biggest secret in real estate: Banks don't care nearly as much about how much you save as they care about your borrowing capacity.",
+  "kick": "BORROWING CAPACITY",
+  "params": {}
+ },
+ {
+  "scene": "cashFlag",
+  "text": "You could have $50,000 sitting in cash, but if the bank's algorithm flags you as high-risk, your pre-approval gets slashed. Here's how you fix that immediately:",
+  "kick": "HIGH-RISK FLAG",
+  "params": {}
+ },
+ {
+  "scene": "creditCard",
+  "text": "Got a credit card with a $10,000 limit that sits in a drawer with zero balance? To a mortgage lender, that's $10,000 of active debt. Closing that card or dropping the limit to $1,000 can instantly boost your borrowing power by $40,000 to $50,000.",
+  "kick": "KILL UNUSED CREDIT LIMITS",
+  "params": {}
+ },
+ {
+  "scene": "debts",
+  "text": "Personal loans, car payments, and Buy-Now-Pay-Later accounts eat your monthly income assessment alive. Pay these off first before putting a single extra dollar into your house deposit.",
+  "kick": "ELIMINATE CONSUMER DEBT",
+  "params": {}
+ },
+ {
+  "scene": "payYourself",
+  "text": "Set up 'Pay Yourself First'. The moment your paycheck lands, automatically shift your target savings percentage straight into a separate account. If you don't see it in your everyday account, you won't spend it.",
+  "kick": "AUTOMATE YOUR MONEY",
+  "params": {}
+ },
+ {
+  "scene": "step",
+  "text": null,
+  "kick": null,
+  "params": {
+   "num": 2,
+   "title": "STOP SAVING FOR A 20% DEPOSIT",
+   "icon": "piggy"
+  },
+  "dur": 3.0
+ },
+ {
+  "scene": "depositSlow",
+  "text": "Here's where most median-income earners get stuck: trying to save a full 20% deposit. On a median property, 20% plus fees can take 7 to 10 years to save. By the time you get there, house prices have moved further away.",
+  "kick": "THE 20% TRAP",
+  "params": {}
+ },
+ {
+  "scene": "depositTimeline",
+  "text": "Instead, you need to leverage government assistance and modern homebuyer schemes.",
+  "kick": "5% vs 20%",
+  "params": {}
+ },
+ {
+  "scene": "govScheme",
+  "text": "Look into First Home Guarantee programs. In many regions, governments allow first home buyers to purchase with as little as a 5% deposit without paying expensive Lenders Mortgage Insurance.",
+  "kick": "LOW-DEPOSIT GOVERNMENT SCHEMES",
+  "params": {}
+ },
+ {
+  "scene": "taxAccount",
+  "text": "Use tax-effective accounts to build your deposit faster, like the First Home Super Saver scheme in Australia or local equivalents. Saving with pre-tax dollars means growing your deposit up to 30% faster than standard bank savings.",
+  "kick": "TAX-ADVANTAGED SAVINGS",
+  "params": {}
+ },
+ {
+  "scene": "step",
+  "text": null,
+  "kick": null,
+  "params": {
+   "num": 3,
+   "title": "THE STEPPING-STONE PROPERTY & RENTVESTING",
+   "icon": "house"
+  },
+  "dur": 3.0
+ },
+ {
+  "scene": "splitDream",
+  "text": "Step three requires a mindset shift. Your first home does not have to be your forever home.",
+  "kick": "MINDSET SHIFT",
+  "params": {}
+ },
+ {
+  "scene": "splitDream",
+  "text": "If you try to buy a four-bedroom freestanding house in a top-tier neighborhood as your first move on a median income, you'll get stuck at the starting line. Look at these two strategic entry routes:",
+  "kick": "TWO ENTRY ROUTES",
+  "params": {
+   "mode": "stuck"
+  }
+ },
+ {
+  "scene": "starter",
+  "text": "Look for well-built townhouses or apartments in emerging outer suburbs or growth corridors. Getting into the market early lets equity build up for 3 to 5 years. You then use that built-up equity as the deposit for your next, bigger property.",
+  "kick": "OPTION A: THE STARTER PROPERTY",
+  "params": {}
+ },
+ {
+  "scene": "rentvest",
+  "text": "Can't afford to buy where you actually want to live? Rent where you love living, and buy an investment property in an affordable, high-growth suburb elsewhere. Your tenant pays down your mortgage while the property gains value.",
+  "kick": "OPTION B: RENTVESTING",
+  "params": {}
+ },
+ {
+  "scene": "step",
+  "text": null,
+  "kick": null,
+  "params": {
+   "num": 4,
+   "title": "THE EMERGENCY BUFFER RULE",
+   "icon": "shield"
+  },
+  "dur": 3.0
+ },
+ {
+  "scene": "zeroBank",
+  "text": "There's one critical mistake you must avoid: emptying your bank account down to $0 on settlement day.",
+  "kick": "DON'T HIT $0",
+  "params": {}
+ },
+ {
+  "scene": "buffer",
+  "text": "Owning a home comes with unexpected expenses: council rates, building insurance, basic repairs, and interest rate changes. When you calculate your target deposit, ensure you leave a 3-to-6-month emergency buffer untouched. Staying financially secure after you get the keys is just as important as getting them in the first place.",
+  "kick": "3-6 MONTH BUFFER",
+  "params": {}
+ },
+ {
+  "scene": "host",
+  "text": "Buying a home on a median income isn't about luck or waiting for a market crash. It comes down to four clear moves:",
+  "kick": "RECAP",
+  "params": {
+   "mood": "smile"
+  }
+ },
+ {
+  "scene": "recap",
+  "text": "One. Maximize your borrowing power by clearing credit limits and consumer debt. Two. Target a 5% deposit using government support and tax-advantaged accounts. Three. Buy a starter property or rentvest to get your foot on the property ladder. Four. Keep an emergency safety buffer so you stay secure.",
+  "kick": "4 CLEAR MOVES",
+  "params": {}
+ },
+ {
+  "scene": "ctaYT",
+  "text": "If you found this breakdown helpful, hit that like button, subscribe for more practical finance guides, and drop a comment below letting me know what step you're working on right now. Thanks for watching, and I'll see you in the next video!",
+  "kick": null,
+  "params": {}
+ },
+ {
+  "scene": "endscreen",
+  "text": null,
+  "kick": null,
+  "params": {},
+  "dur": 12.0
+ }
+]

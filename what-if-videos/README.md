@@ -13,6 +13,7 @@ Each folder is one episode: the final video (`what-if-*.mp4`) plus everything us
 | `simulation/` | What if your entire life was a simulation? | flat cartoon | 53 s |
 | `ocean/` | What if the oceans rose into the sky? | flat cartoon | 56 s |
 | `longform-demographics/` | What if there are fewer of us? (long-form, 1920×1080) | flat cartoon | 9:59 |
+| `longform-first-home/` | How to Buy Your First House on a Median Income (long-form, 1920×1080) | flat cartoon | 4:52 |
 
 ## Rebuild an episode
 
