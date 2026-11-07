@@ -9,6 +9,7 @@ Each folder is one episode: the final video (`what-if-*.mp4`) plus everything us
 | `monday/` | What if tomorrow never arrived? | flat cartoon | 30 s |
 | `sun/` | What if the Sun never set again? | flat cartoon | 40 s |
 | `ant/` | What if you woke up the size of an ant? | flat cartoon | 48.5 s |
+| `silence/` | What if every sound on Earth suddenly vanished? | flat cartoon | 54 s |
 
 ## Rebuild an episode
 
