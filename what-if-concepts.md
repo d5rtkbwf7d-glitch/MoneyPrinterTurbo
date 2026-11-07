@@ -117,3 +117,22 @@ Five seconds without gravity. Everything not tied down starts drifting. You floa
 - What if the oceans were twice as deep?
 - What if you woke up 1,000 years in the future?
 - What if dinosaurs never went extinct?
+
+---
+
+## 11. What if you disappeared for 24 hours and nobody could see you?
+**Hook:** "You're invisible for 24 hours. The first thing you lose? Your eyesight."
+
+**Script (~80 words, ~30 s):**
+You wake up invisible. For twenty-four hours, nobody can see you. Hour one: free snacks, front-row seats, total chaos. But here's the catch. To be invisible, light has to pass straight through you, including your eyes. If your eyes can't catch light, you can't see. You're blind. Hour two: you're crossing a street where no driver can see you. Your phone's face unlock fails. And by hour twenty-four, you learn the scariest part: nobody even noticed you were gone.
+
+**Storyboard (stick figures, white background, 9:16):**
+| Time | Beat |
+|---|---|
+| 0–3 s | Stick figure wakes up; body turns into a dotted outline. Text: "24:00:00" timer starts. |
+| 3–8 s | Dotted figure grabs snacks off a shelf, sits front row at a concert, pranks a friend. |
+| 8–13 s | Freeze. A light ray passes straight through the figure's head. Label: "light goes through you." |
+| 13–17 s | The screen goes black from the figure's point of view. Text: "BLIND." |
+| 17–22 s | Figure stumbles into a crosswalk; a car zooms by and the driver doesn't brake. Phone shows "Face not recognized." |
+| 22–27 s | Timer hits 00:00:00. Figure reappears in an empty room; phone shows 0 missed calls. |
+| 27–30 s | Figure sits alone. Final text: "Nobody noticed." |
