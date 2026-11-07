@@ -12,6 +12,7 @@ Each folder is one episode: the final video (`what-if-*.mp4`) plus everything us
 | `silence/` | What if every sound on Earth suddenly vanished? | flat cartoon | 54 s |
 | `simulation/` | What if your entire life was a simulation? | flat cartoon | 53 s |
 | `ocean/` | What if the oceans rose into the sky? | flat cartoon | 56 s |
+| `longform-demographics/` | What if there are fewer of us? (long-form, 1920×1080) | flat cartoon | 9:59 |
 
 ## Rebuild an episode
 
@@ -27,3 +28,7 @@ ffmpeg -y -i video_noaudio.mp4 -i mix.wav -c:v copy -c:a aac -b:a 192k -shortest
 ```
 
 `invisible/render_flat.html` is the flat cartoon version: render it with `PAGE=render_flat.html OUT=video_flat_noaudio.mp4 node render.js video`.
+
+## Long-form (1920×1080)
+
+`longform-demographics/` uses its own pipeline: `segments.py` -> `tts_long.py` -> `timeline_long.py` -> `audio_long.py` -> `node render.js video`, then the same ffmpeg mix and mux.

@@ -1,0 +1,640 @@
+[
+ {
+  "scene": "playground",
+  "text": null,
+  "kick": null,
+  "params": {
+   "bell": true
+  },
+  "dur": 4.0
+ },
+ {
+  "scene": "versus",
+  "text": "What if your future home becomes cheaper... but your retirement becomes more expensive?",
+  "kick": null,
+  "params": {
+   "left": "house_down",
+   "right": "pension_up"
+  }
+ },
+ {
+  "scene": "versus",
+  "text": "What if companies desperately need workers... but hospitals cannot find enough nurses?",
+  "kick": null,
+  "params": {
+   "left": "hiring",
+   "right": "hospital"
+  }
+ },
+ {
+  "scene": "versus",
+  "text": "And what if governments offer people money to have babies... but the next generation still gets smaller?",
+  "kick": null,
+  "params": {
+   "left": "baby_money",
+   "right": "shrinking"
+  }
+ },
+ {
+  "scene": "playground",
+  "text": "This might sound like the beginning of a science-fiction movie. But the demographic shift behind it is already happening.",
+  "kick": "ALREADY HAPPENING",
+  "params": {}
+ },
+ {
+  "scene": "waffle",
+  "text": "According to the United Nations' World Fertility 2024 report, fertility was below replacement level in 55 percent of the world's countries and areas.",
+  "kick": "UN WORLD FERTILITY 2024",
+  "params": {}
+ },
+ {
+  "scene": "pyramid",
+  "text": "That does not mean humanity is about to disappear. It means something more complicated: many societies are moving toward a future with fewer young people and a larger share of older adults.",
+  "kick": "FEWER YOUNG, MORE OLDER ADULTS",
+  "params": {}
+ },
+ {
+  "scene": "generations",
+  "text": "So, what happens when an economy built around each generation being bigger meets a generation that is smaller?",
+  "kick": null,
+  "params": {}
+ },
+ {
+  "scene": "fiveFutures",
+  "text": "Let's explore five possible futures.",
+  "kick": "5 POSSIBLE FUTURES",
+  "params": {}
+ },
+ {
+  "scene": "tree",
+  "text": "First, we need to understand one number: 2.1.",
+  "kick": null,
+  "params": {
+   "gens": [
+    10,
+    9,
+    7,
+    5
+   ]
+  }
+ },
+ {
+  "scene": "twoPointOne",
+  "text": "In countries with low mortality, around 2.1 children per woman is the fertility level needed for one generation to replace itself over the long term, without migration.",
+  "kick": "REPLACEMENT LEVEL",
+  "params": {}
+ },
+ {
+  "scene": "twoPointOne",
+  "text": "It is a population average, not a target for every family.",
+  "kick": "AN AVERAGE, NOT A TARGET",
+  "params": {
+   "mode": "avg"
+  }
+ },
+ {
+  "scene": "rateChart",
+  "text": "And the fertility rate is not the same as the number of babies born this year. It estimates how many children a woman would have if current age-specific birth rates continued throughout her reproductive life.",
+  "kick": "FERTILITY RATE IS NOT BIRTHS THIS YEAR",
+  "params": {}
+ },
+ {
+  "scene": "couples",
+  "text": "Now imagine 100 couples.",
+  "kick": "100 COUPLES",
+  "params": {
+   "rows": [
+    [
+     "100 couples",
+     10,
+     "parent"
+    ]
+   ]
+  }
+ },
+ {
+  "scene": "couples",
+  "text": "In a simplified example, if every couple has two children, they have 200 children altogether.",
+  "kick": "2 CHILDREN EACH",
+  "params": {
+   "rows": [
+    [
+     "100 couples",
+     10,
+     "parent"
+    ],
+    [
+     "200 children",
+     20,
+     "kid"
+    ]
+   ]
+  }
+ },
+ {
+  "scene": "couples",
+  "text": "If those couples average just one child, the next generation has only 100.",
+  "kick": "1 CHILD EACH",
+  "params": {
+   "rows": [
+    [
+     "100 couples",
+     10,
+     "parent"
+    ],
+    [
+     "100 children",
+     10,
+     "kid"
+    ]
+   ]
+  }
+ },
+ {
+  "scene": "couples",
+  "text": "If that pattern continues, the following generation could be smaller again.",
+  "kick": "SMALLER AGAIN",
+  "params": {
+   "rows": [
+    [
+     "100 couples",
+     10,
+     "parent"
+    ],
+    [
+     "100 children",
+     10,
+     "kid"
+    ],
+    [
+     "50 grandchildren",
+     5,
+     "kid"
+    ]
+   ]
+  }
+ },
+ {
+  "scene": "complex",
+  "text": "Real populations are more complicated. People live longer, move between countries, and have children at different ages.",
+  "kick": "REAL LIFE IS MORE COMPLICATED",
+  "params": {}
+ },
+ {
+  "scene": "growthChart",
+  "text": "A country can even keep growing for years after fertility falls below replacement.",
+  "kick": "POPULATION MOMENTUM",
+  "params": {}
+ },
+ {
+  "scene": "pyramid",
+  "text": "But over decades, smaller birth cohorts change the shape of society. And that brings us to our first scenario.",
+  "kick": "THE SHAPE OF SOCIETY",
+  "params": {
+   "mode": "late"
+  }
+ },
+ {
+  "scene": "title",
+  "text": null,
+  "kick": null,
+  "params": {
+   "num": 1,
+   "title": "WHAT IF THERE ARE FEWER WORKERS?",
+   "icon": "workers"
+  },
+  "dur": 3.0
+ },
+ {
+  "scene": "town",
+  "text": "Imagine a town twenty-five years from now. Its largest generation is retiring. But the generation entering work is much smaller.",
+  "kick": "25 YEARS FROM NOW",
+  "params": {
+   "mode": "retire"
+  }
+ },
+ {
+  "scene": "town",
+  "text": "The local supermarket needs staff. Construction companies need electricians. The hospital needs carers.",
+  "kick": "HELP WANTED",
+  "params": {
+   "mode": "signs"
+  }
+ },
+ {
+  "scene": "town",
+  "text": "At first, that could be good news for some workers. Employers may offer higher wages, better training, or more flexible hours because people are harder to recruit.",
+  "kick": "HIGHER WAGES  \u00b7  TRAINING  \u00b7  FLEXIBLE HOURS",
+  "params": {
+   "mode": "wages"
+  }
+ },
+ {
+  "scene": "bakery",
+  "text": "But now imagine you own a small bakery. You raise wages to attract staff. Your supplier has done the same. So has the delivery company.",
+  "kick": "YOUR SMALL BAKERY",
+  "params": {
+   "mode": "costs"
+  }
+ },
+ {
+  "scene": "bakery",
+  "text": "Your costs increase. You might raise prices, shorten opening hours, buy equipment, or close.",
+  "kick": "COSTS RISE",
+  "params": {
+   "mode": "options"
+  }
+ },
+ {
+  "scene": "demand",
+  "text": "That does not mean every labour shortage creates inflation, or that every business loses. Demand changes too. Fewer children could mean less demand for some school supplies, while an older population needs more healthcare.",
+  "kick": "DEMAND CHANGES TOO",
+  "params": {}
+ },
+ {
+  "scene": "matching",
+  "text": "The challenge is matching the workers we have with the services people need.",
+  "kick": "MATCHING WORKERS TO NEEDS",
+  "params": {}
+ },
+ {
+  "scene": "productivity",
+  "text": "And here is the crucial distinction: A smaller economy is not automatically a poorer society. If fewer workers produce more value per person, living standards can still improve.",
+  "kick": "SMALLER DOES NOT MEAN POORER",
+  "params": {}
+ },
+ {
+  "scene": "piggy",
+  "text": "Which takes us to the biggest financial question.",
+  "kick": null,
+  "params": {
+   "mode": "question"
+  }
+ },
+ {
+  "scene": "title",
+  "text": null,
+  "kick": null,
+  "params": {
+   "num": 2,
+   "title": "WHAT IF RETIREMENT GETS HARDER?",
+   "icon": "piggy"
+  },
+  "dur": 3.0
+ },
+ {
+  "scene": "dinner",
+  "text": "Imagine a shared dinner. Ten people contribute money to feed themselves and a few relatives.",
+  "kick": "A SHARED DINNER",
+  "params": {
+   "retired": 0
+  }
+ },
+ {
+  "scene": "dinner",
+  "text": "Over time, several contributors retire. Now fewer people are earning, while more people still need dinner.",
+  "kick": "FEWER EARNING",
+  "params": {
+   "retired": 4
+  }
+ },
+ {
+  "scene": "dinner",
+  "text": "Many public pension systems face a version of this problem: today's workers help finance today's retirees.",
+  "kick": "TODAY'S WORKERS FUND TODAY'S RETIREES",
+  "params": {
+   "retired": 4,
+   "link": true
+  }
+ },
+ {
+  "scene": "levers",
+  "text": "As populations age, governments may face difficult choices. Increase contributions. Raise taxes. Adjust benefits. Encourage longer working lives. Or move money away from other priorities.",
+  "kick": "DIFFICULT CHOICES",
+  "params": {
+   "items": [
+    "Increase contributions",
+    "Raise taxes",
+    "Adjust benefits",
+    "Longer working lives",
+    "Move money from other priorities"
+   ],
+   "words": [
+    "contributions",
+    "taxes",
+    "benefits",
+    "working",
+    "priorities"
+   ]
+  }
+ },
+ {
+  "scene": "pillars",
+  "text": "But pensions are not identical everywhere. Some rely more on taxes, some on contributions, and others include substantial invested savings.",
+  "kick": "PENSIONS DIFFER",
+  "params": {}
+ },
+ {
+  "scene": "piggy",
+  "text": "An ageing population does not automatically mean your pension disappears. It means the system may need to change.",
+  "kick": "CHANGE, NOT DISAPPEAR",
+  "params": {
+   "mode": "fix"
+  }
+ },
+ {
+  "scene": "twoWorkers",
+  "text": "Now consider two people asked to work longer. One has a flexible office job. The other has spent forty years lifting heavy materials. The same retirement age can affect them very differently.",
+  "kick": "SAME RETIREMENT AGE?",
+  "params": {}
+ },
+ {
+  "scene": "twoWorkers",
+  "text": "So the question is not simply, 'Can people work longer?' It is, 'Who can work longer, under what conditions, and with what support?'",
+  "kick": "WHO? UNDER WHAT CONDITIONS? WITH WHAT SUPPORT?",
+  "params": {
+   "mode": "q"
+  }
+ },
+ {
+  "scene": "elders",
+  "text": "And remember: longer lives are an achievement. The problem is failing to adapt our institutions to them.",
+  "kick": "LONGER LIVES ARE AN ACHIEVEMENT",
+  "params": {}
+ },
+ {
+  "scene": "title",
+  "text": null,
+  "kick": null,
+  "params": {
+   "num": 3,
+   "title": "WHAT IF HOUSES BECOME CHEAPER?",
+   "icon": "house"
+  },
+  "dur": 3.0
+ },
+ {
+  "scene": "houses",
+  "text": "Here is the scenario many younger viewers might welcome. Fewer people. More empty homes. Lower prices.",
+  "kick": "FEWER PEOPLE, LOWER PRICES?",
+  "params": {}
+ },
+ {
+  "scene": "houses",
+  "text": "Possible? Yes, in some places. Guaranteed everywhere? Absolutely not.",
+  "kick": "POSSIBLE IN SOME PLACES. NOT GUARANTEED.",
+  "params": {
+   "mode": "no"
+  }
+ },
+ {
+  "scene": "townCity",
+  "text": "Imagine two locations in the same country. A small town loses younger residents. Its school closes. Shops struggle. Housing demand weakens.",
+  "kick": "A SMALL TOWN",
+  "params": {
+   "focus": "town"
+  }
+ },
+ {
+  "scene": "townCity",
+  "text": "Meanwhile, the capital city keeps attracting students, migrants, and workers. Housing there can remain expensive, even while the national population shrinks.",
+  "kick": "THE CAPITAL CITY",
+  "params": {
+   "focus": "city"
+  }
+ },
+ {
+  "scene": "households",
+  "text": "There is another twist. Homes are occupied by households, not by population totals. If more people live alone, a country can need more homes even without adding more people.",
+  "kick": "HOUSEHOLDS, NOT HEADCOUNT",
+  "params": {}
+ },
+ {
+  "scene": "accessible",
+  "text": "Older residents may also need different housing: smaller properties, accessible entrances, and locations close to healthcare.",
+  "kick": "DIFFERENT HOUSING NEEDS",
+  "params": {}
+ },
+ {
+  "scene": "townCity",
+  "text": "So demographic change could create an unusual future: Empty houses in places where jobs have disappeared... and housing shortages where people still need to live.",
+  "kick": "EMPTY HOMES AND SHORTAGES",
+  "params": {
+   "focus": "both"
+  }
+ },
+ {
+  "scene": "farHouse",
+  "text": "A cheap house is much less useful if the nearest employer, hospital, or supermarket is far away.",
+  "kick": "CHEAP, BUT FAR AWAY",
+  "params": {}
+ },
+ {
+  "scene": "title",
+  "text": null,
+  "kick": null,
+  "params": {
+   "num": 4,
+   "title": "WHAT IF AI FILLS THE GAP?",
+   "icon": "robot"
+  },
+  "dur": 3.0
+ },
+ {
+  "scene": "aiTools",
+  "text": "Now imagine a different response. Instead of trying to replace every missing worker, we help each worker accomplish more.",
+  "kick": "HELP EACH WORKER DO MORE",
+  "params": {
+   "mode": "intro"
+  }
+ },
+ {
+  "scene": "aiTools",
+  "text": "Software reduces paperwork. Machines handle repetitive factory tasks. Better equipment allows older workers to remain employed comfortably.",
+  "kick": null,
+  "params": {
+   "mode": "list"
+  }
+ },
+ {
+  "scene": "team",
+  "text": "In a simplified example, if a team becomes ten percent smaller but each remaining worker becomes productive enough, total output could be maintained. That is why productivity matters so much.",
+  "kick": "PRODUCTIVITY MATTERS",
+  "params": {}
+ },
+ {
+  "scene": "obstacles",
+  "text": "But 'AI will fix it' skips several difficult steps. Technology costs money. Businesses need time to adopt it. Workers need training. And the benefits may not reach everyone equally.",
+  "kick": "\"AI WILL FIX IT\"?",
+  "params": {
+   "words": [
+    "money",
+    "time",
+    "training",
+    "equally"
+   ]
+  }
+ },
+ {
+  "scene": "care",
+  "text": "Most importantly, producing more digital content is different from helping someone shower, repairing a water pipe, or comforting a frightened patient. Some tasks are much harder to automate than others.",
+  "kick": "HARD TO AUTOMATE",
+  "params": {}
+ },
+ {
+  "scene": "twoFutures",
+  "text": "So imagine two futures. In one, technology helps a smaller workforce support a good quality of life. In the other, productivity gains concentrate in a few companies while essential services remain understaffed.",
+  "kick": "TWO FUTURES",
+  "params": {
+   "mode": "both"
+  }
+ },
+ {
+  "scene": "twoFutures",
+  "text": "The technology matters. How we use it matters just as much.",
+  "kick": "HOW WE USE IT MATTERS",
+  "params": {
+   "mode": "both"
+  }
+ },
+ {
+  "scene": "title",
+  "text": null,
+  "kick": null,
+  "params": {
+   "num": 5,
+   "title": "WHAT IF GOVERNMENTS TRY TO REVERSE IT?",
+   "icon": "baby"
+  },
+  "dur": 3.0
+ },
+ {
+  "scene": "babyBonus",
+  "text": "Suppose a government announces a baby bonus. Will births suddenly return to replacement level? There is no guaranteed result.",
+  "kick": "A BABY BONUS?",
+  "params": {}
+ },
+ {
+  "scene": "checklist",
+  "text": "Because deciding to have a child involves much more than one payment. Can we afford a suitable home? Is childcare available? Will we lose income? Can we balance work and family life? Do we actually want to become parents?",
+  "kick": "MORE THAN ONE PAYMENT",
+  "params": {
+   "items": [
+    "Can we afford a suitable home?",
+    "Is childcare available?",
+    "Will we lose income?",
+    "Can we balance work and family?",
+    "Do we want to be parents?"
+   ],
+   "words": [
+    "afford",
+    "childcare",
+    "income",
+    "balance",
+    "actually"
+   ]
+  }
+ },
+ {
+  "scene": "couplesChoice",
+  "text": "Some people want fewer children. Others want children but face barriers. Those are different situations, and policy needs to recognise that.",
+  "kick": "DIFFERENT SITUATIONS",
+  "params": {}
+ },
+ {
+  "scene": "policyCards",
+  "text": "Affordable childcare, parental leave, stable employment, and housing can make family life easier.",
+  "kick": "MAKING FAMILY LIFE EASIER",
+  "params": {}
+ },
+ {
+  "scene": "babyTimeline",
+  "text": "But even if births increase tomorrow, those babies will not become nurses or taxpayers next year. They need roughly two decades to enter the workforce.",
+  "kick": "ABOUT 20 YEARS",
+  "params": {}
+ },
+ {
+  "scene": "migration",
+  "text": "What about immigration? It can bring working-age people into a country much sooner. But successful migration also requires housing, infrastructure, fair working conditions, and ways to recognise people's skills.",
+  "kick": "IMMIGRATION",
+  "params": {
+   "words": [
+    "housing",
+    "infrastructure",
+    "fair",
+    "skills"
+   ]
+  }
+ },
+ {
+  "scene": "migrationGlobe",
+  "text": "And migration moves people between countries. It does not increase the global population. It can be part of the response, alongside training, productivity, and better opportunities for people already living there.",
+  "kick": "PART OF THE RESPONSE",
+  "params": {}
+ },
+ {
+  "scene": "noSwitch",
+  "text": "There is no single switch that fixes demographic change.",
+  "kick": "NO SINGLE SWITCH",
+  "params": {}
+ },
+ {
+  "scene": "triple",
+  "text": "But here is the twist. A smaller future generation does not automatically mean a worse future.",
+  "kick": "THE TWIST",
+  "params": {}
+ },
+ {
+  "scene": "twoFutures",
+  "text": "It could mean fewer pressures on some resources, more investment per child, and stronger incentives to improve productivity.",
+  "kick": "IT COULD BE BETTER",
+  "params": {
+   "mode": "bright"
+  }
+ },
+ {
+  "scene": "twoFutures",
+  "text": "It could also mean stretched care services, struggling communities, and difficult financial choices.",
+  "kick": "OR HARDER",
+  "params": {
+   "mode": "grey"
+  }
+ },
+ {
+  "scene": "triple",
+  "text": "Both outcomes are possible. What matters is the pace of change, and whether societies prepare.",
+  "kick": "PACE OF CHANGE + PREPARATION",
+  "params": {}
+ },
+ {
+  "scene": "worldPaths",
+  "text": "The world is not following one demographic path. Some populations are still growing rapidly, while others are ageing and shrinking.",
+  "kick": "NOT ONE PATH",
+  "params": {}
+ },
+ {
+  "scene": "society",
+  "text": "So the challenge is not simply getting everyone to have more babies. It is building a society where people can make real choices about family life, and where a good standard of living does not depend entirely on having more people every generation.",
+  "kick": "REAL CHOICES",
+  "params": {}
+ },
+ {
+  "scene": "bigQuestion",
+  "text": "Because the biggest question is not: 'What if there are fewer of us?' It is: 'What if our systems never learn how to adapt?'",
+  "kick": null,
+  "params": {}
+ },
+ {
+  "scene": "cta",
+  "text": "If your country's next generation were smaller, what would you change first: housing, retirement, or the way we work? Tell us in the comments.",
+  "kick": "WHAT WOULD YOU CHANGE FIRST?",
+  "params": {}
+ },
+ {
+  "scene": "endcard",
+  "text": null,
+  "kick": null,
+  "params": {},
+  "dur": 4.0
+ }
+]
