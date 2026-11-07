@@ -1,0 +1,26 @@
+# What If shorts
+
+Each folder is one episode: the final video (`what-if-*.mp4`) plus everything used to make it.
+
+| Folder | Video | Style | Length |
+|---|---|---|---|
+| `invisible/` | What if you were invisible for 24 hours? | stick figure + flat cartoon | 30 s |
+| `dreams/` | What if your dreams were broadcast to everyone? | flat cartoon | 30 s |
+| `monday/` | What if tomorrow never arrived? | flat cartoon | 30 s |
+| `sun/` | What if the Sun never set again? | flat cartoon | 40 s |
+| `ant/` | What if you woke up the size of an ant? | flat cartoon | 48.5 s |
+
+## Rebuild an episode
+
+Run these from inside the episode's folder. They need the MoneyPrinterTurbo venv (for `edge-tts`), Node with Playwright, and ffmpeg.
+
+```bash
+python tts.py          # narration per line (script.json; invisible/ keeps its lines in tts.py)
+python3 timeline.py    # scene + caption timing -> timeline.json
+python audio.py        # music.wav, sfx.wav, voice.wav
+node render.js video   # draws every frame from render.html -> video_noaudio.mp4
+ffmpeg -y -i voice.wav -i music.wav -i sfx.wav -filter_complex "[0:a]asplit=2[v][sc];[1:a]volume=0.32[m];[m][sc]sidechaincompress=threshold=0.03:ratio=6:attack=20:release=300[md];[2:a]volume=0.5[s];[v][md][s]amix=inputs=3:normalize=0,loudnorm=I=-14:TP=-1.5:LRA=11[out]" -map "[out]" -ar 44100 -ac 2 mix.wav
+ffmpeg -y -i video_noaudio.mp4 -i mix.wav -c:v copy -c:a aac -b:a 192k -shortest -movflags +faststart final.mp4
+```
+
+`invisible/render_flat.html` is the flat cartoon version: render it with `PAGE=render_flat.html OUT=video_flat_noaudio.mp4 node render.js video`.
