@@ -34,3 +34,9 @@ ffmpeg -y -i video_noaudio.mp4 -i mix.wav -c:v copy -c:a aac -b:a 192k -shortest
 ## Long-form (1920×1080)
 
 `longform-demographics/` uses its own pipeline: `segments.py` -> `tts_long.py` -> `timeline_long.py` -> `audio_long.py` -> `node render.js video`, then the same ffmpeg mix and mux.
+
+## Channel defaults
+
+- **No background music.** Audio is narration plus light sound effects only (pops, whooshes, booms). The `musk-machine/` episode's `audio.py` is the template: it writes a silent `music.wav`, and the mix uses voice + sfx only.
+- Style: flat cartoon, vertical 1080×1920 for Shorts; word-by-word captions.
+- Scripts based on other creators' videos are rewritten as original scripts and approved before rendering; facts about real people are hedged or checked.
