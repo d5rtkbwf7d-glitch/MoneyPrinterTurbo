@@ -216,6 +216,29 @@ what if, what if the oceans disappeared, oceans floating, oceans into space, ear
 
 ---
 
+## 10. What If Your Crush Could Hear Your Thoughts?
+File: `crush-thoughts/what-if-crush-hears-thoughts.mp4`
+
+**Title:** What If Your Crush Could Hear Your Thoughts? 😳❤️
+
+**Description:**
+```
+You say "Hey, how's your day?"… but inside your head you're SCREAMING. 😳
+
+Now imagine she can hear every single thought. Act normal. Think about pizza. Think about dinosaurs. Think about ANYTHING. 🍕🦖
+
+Would you survive five minutes? Comment your thoughts below 👇
+
+#WhatIf #Crush #Funny #Shorts #Animation
+```
+
+**Tags:**
+```
+what if, what if your crush could hear your thoughts, crush, my crush, mind reading, reading minds, funny what if, relatable, awkward moments, love story, cartoon animation, animated story, funny shorts, storytime, what if scenario, shorts
+```
+
+---
+
 ## Upload tips
 - **Hashtags:** keep 3 to 5 per description. The first three show above the title, and more than 15 makes YouTube ignore all of them.
 - **First line:** your hook. It's what viewers see before tapping "more".
