@@ -1,0 +1,25 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; background: #14213D; overflow: hidden; }
+    #root svg { position: absolute; inset: 0; }
+    .s8-label { position: absolute; left: 0; right: 0; text-align: center; font-family: Inter, sans-serif; font-weight: 900; color: #fff; -webkit-text-stroke: 10px #2B2D42; paint-order: stroke fill; }
+    .s8-tint { position: absolute; inset: 0; }
+  </style>
+  <div id="root" data-composition-id="s8" data-width="1080" data-height="1920" data-start="0" data-duration="2.782" data-layout-allow-overlap>
+    <svg id="s8-art" class="clip" data-start="0" data-duration="2.782" width="1080" height="1920" viewBox="0 0 1080 1920" data-layout-ignore><rect width="1080" height="1920" fill="#14213D"/><g transform="translate(540,1100) scale(1.15)"><g id="s8-hero">
+  <path d="M-16,-90 L-26,0 M16,-90 L26,0" stroke="#3D5A80" stroke-width="26" stroke-linecap="round"/>
+  <path d="M-28,-150 L-52,-60 M28,-150 L52,-60" stroke="#E63946" stroke-width="22" stroke-linecap="round" fill="none"/>
+  <rect x="-40" y="-190" width="80" height="112" rx="26" fill="#E63946" stroke="#2B2D42" stroke-width="6"/>
+  <circle cx="0" cy="-272" r="44" fill="#FFD3B5" stroke="#2B2D42" stroke-width="6"/><path d="M-42,-292 A42,42 0 0 1 42,-292 Z" fill="#E63946" stroke="#2B2D42" stroke-width="5"/><rect x="0" y="-300" width="56" height="12" rx="6" fill="#E63946" stroke="#2B2D42" stroke-width="4"/>
+  <circle cx="-15" cy="-275" r="6" fill="#2B2D42"/><circle cx="15" cy="-275" r="6" fill="#2B2D42"/><path d="M-13,-252 Q0,-264 13,-252" stroke="#2B2D42" stroke-width="5" fill="none" stroke-linecap="round"/>
+</g></g><path id="s8-coffin" d="M440,380 L640,380 L760,560 L700,1140 L380,1140 L320,560 Z" fill="rgba(189,224,254,.28)" stroke="#BDE0FE" stroke-width="16" stroke-linejoin="round"/></svg>
+    <div id="s8-sp" class="clip s8-label" data-start="0.1" data-duration="2.682" style="top:220px;font-size:80px;color:#FFB703"><span id="s8-sp-t">SUPERPOWER</span></div><div id="s8-cf" class="clip s8-label" data-start="1.538" data-duration="1.244" style="top:320px;font-size:100px;color:#fff"><span id="s8-cf-t">= COFFIN</span></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s8-coffin", { opacity: 0, scale: 1.4, svgOrigin: "540 760" }, { opacity: 1, scale: 1, svgOrigin: "540 760", duration: 0.5, ease: "power3.out" }, 1.238);
+    tl.fromTo("#s8-sp-t", { scale: 0.6, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.35, ease: "back.out(2.2)" }, 0.1);
+    tl.fromTo("#s8-cf-t", { scale: 0.6, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.35, ease: "back.out(2.2)" }, 1.538);
+    window.__timelines["s8"] = tl;
+  </script>
+</template>

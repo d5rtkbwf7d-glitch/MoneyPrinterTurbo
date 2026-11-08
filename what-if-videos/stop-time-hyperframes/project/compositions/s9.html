@@ -1,0 +1,26 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; background: #2E2A5A; overflow: hidden; }
+    #root svg { position: absolute; inset: 0; }
+    .s9-label { position: absolute; left: 0; right: 0; text-align: center; font-family: Inter, sans-serif; font-weight: 900; color: #fff; -webkit-text-stroke: 10px #2B2D42; paint-order: stroke fill; }
+    .s9-tint { position: absolute; inset: 0; }
+  </style>
+  <div id="root" data-composition-id="s9" data-width="1080" data-height="1920" data-start="0" data-duration="6.134" data-layout-allow-overlap>
+    <svg id="s9-art" class="clip" data-start="0" data-duration="6.134" width="1080" height="1920" viewBox="0 0 1080 1920" data-layout-ignore><rect width="1080" height="1920" fill="#2E2A5A"/><rect y="1150" width="1080" height="770" fill="#3F3770"/><rect x="120" y="300" width="300" height="360" rx="16" fill="#14123A" stroke="#2B2D42" stroke-width="10"/><circle cx="300" cy="400" r="46" fill="#FFF3B0"/><circle cx="322" cy="386" r="42" fill="#14123A"/><rect x="120" y="900" width="840" height="70" rx="20" fill="#8D6E63" stroke="#2B2D42" stroke-width="6"/><rect x="120" y="840" width="40" height="280" rx="10" fill="#6D4C41"/><rect x="920" y="900" width="40" height="220" rx="10" fill="#6D4C41"/><rect x="160" y="850" width="220" height="80" rx="36" fill="#fff" stroke="#2B2D42" stroke-width="6"/><g transform="translate(270,880) rotate(-90)"><g transform="scale(0.95)"><g id="s9-hero">
+  <path d="M-16,-90 L-26,0 M16,-90 L26,0" stroke="#3D5A80" stroke-width="26" stroke-linecap="round"/>
+  <path d="M-28,-150 L-52,-60 M28,-150 L52,-60" stroke="#E63946" stroke-width="22" stroke-linecap="round" fill="none"/>
+  <rect x="-40" y="-190" width="80" height="112" rx="26" fill="#E63946" stroke="#2B2D42" stroke-width="6"/>
+  <circle cx="0" cy="-272" r="44" fill="#FFD3B5" stroke="#2B2D42" stroke-width="6"/><path d="M-42,-292 A42,42 0 0 1 42,-292 Z" fill="#E63946" stroke="#2B2D42" stroke-width="5"/><rect x="0" y="-300" width="56" height="12" rx="6" fill="#E63946" stroke="#2B2D42" stroke-width="4"/>
+  <circle cx="-15" cy="-275" r="6" fill="#2B2D42"/><circle cx="15" cy="-275" r="6" fill="#2B2D42"/><path d="M-14,-262 Q0,-248 14,-262" stroke="#2B2D42" stroke-width="5" fill="none" stroke-linecap="round"/>
+</g></g></g><rect x="400" y="820" width="540" height="130" rx="34" fill="#FFB703" stroke="#2B2D42" stroke-width="7"/><g id="s9-alarm" transform="translate(820,700)"><circle cx="-70" cy="-90" r="32" fill="#2B2D42"/><circle cx="70" cy="-90" r="32" fill="#2B2D42"/><rect x="-120" y="-80" width="240" height="160" rx="40" fill="#E63946" stroke="#2B2D42" stroke-width="8"/><rect x="-90" y="-45" width="180" height="90" rx="14" fill="#111"/><text x="0" y="18" text-anchor="middle" font-family="JetBrains Mono" font-weight="700" font-size="56" fill="#7CFC8A">7:00</text></g></svg>
+    <div id="s9-fm" class="clip s9-label" data-start="3.136" data-duration="2.998" style="top:260px;font-size:88px;color:#FFB703"><span id="s9-fm-t">5 MORE MINUTES...</span></div><div id="s9-z0" class="clip s9-label" data-start="0" data-duration="6.134" style="top:760px;left:230px;font-size:50px;color:#fff">z</div><div id="s9-z1" class="clip s9-label" data-start="0" data-duration="6.134" style="top:690px;left:280px;font-size:64px;color:#fff">z</div><div id="s9-z2" class="clip s9-label" data-start="0" data-duration="6.134" style="top:620px;left:330px;font-size:78px;color:#fff">z</div><div id="s9-end" class="clip" data-start="5.534" data-duration="0.6" style="position:absolute;inset:0;background:#000;opacity:0"></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s9-alarm", { rotation: -6, svgOrigin: "820 700" }, { rotation: 6, svgOrigin: "820 700", duration: 0.08, ease: "none", yoyo: true, repeat: 39 }, 0);
+    tl.fromTo("#s9-z0", { y: 0, opacity: 1 }, { y: -120, opacity: 0, duration: 1.6, ease: "none", repeat: 3 }, 0.0);tl.fromTo("#s9-z1", { y: 0, opacity: 1 }, { y: -120, opacity: 0, duration: 1.6, ease: "none", repeat: 3 }, 0.5);tl.fromTo("#s9-z2", { y: 0, opacity: 1 }, { y: -120, opacity: 0, duration: 1.6, ease: "none", repeat: 3 }, 1.0);
+    tl.fromTo("#s9-fm-t", { scale: 0.6, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.35, ease: "back.out(2.2)" }, 3.136);
+    tl.fromTo("#s9-end", { opacity: 0 }, { opacity: 1, duration: 0.55 }, 0);
+    window.__timelines["s9"] = tl;
+  </script>
+</template>

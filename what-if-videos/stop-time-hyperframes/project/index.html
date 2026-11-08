@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="assets/gsap.min.js"></script>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: #000; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="33.91" data-width="1080" data-height="1920">
+      <div id="s1" data-composition-id="s1" data-composition-src="compositions/s1.html" data-start="0" data-duration="2.94" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920"></div>
+      <div id="s2" data-composition-id="s2" data-composition-src="compositions/s2.html" data-start="2.94" data-duration="3.426" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920"></div>
+      <div id="s3" data-composition-id="s3" data-composition-src="compositions/s3.html" data-start="6.366" data-duration="2.15" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920"></div>
+      <div id="s4" data-composition-id="s4" data-composition-src="compositions/s4.html" data-start="8.516" data-duration="5.68" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920"></div>
+      <div id="s5" data-composition-id="s5" data-composition-src="compositions/s5.html" data-start="14.196" data-duration="3.35" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920"></div>
+      <div id="s6" data-composition-id="s6" data-composition-src="compositions/s6.html" data-start="17.546" data-duration="2.222" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920"></div>
+      <div id="s7" data-composition-id="s7" data-composition-src="compositions/s7.html" data-start="19.768" data-duration="5.226" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920"></div>
+      <div id="s8" data-composition-id="s8" data-composition-src="compositions/s8.html" data-start="24.994" data-duration="2.782" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920"></div>
+      <div id="s9" data-composition-id="s9" data-composition-src="compositions/s9.html" data-start="27.776" data-duration="6.134" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920"></div>
+      <div id="captions" data-composition-id="captions" data-composition-src="compositions/captions.html" data-start="0" data-duration="33.91" data-track-index="2" data-track-kind="captions" data-width="1080" data-height="1920" style="z-index:5"></div>
+      <audio id="voice" class="clip" src="assets/voice.wav" data-start="0" data-duration="33.91" data-track-index="3" data-volume="1"></audio>
+      <audio id="sfx" class="clip" src="assets/sfx.wav" data-start="0" data-duration="33.91" data-track-index="4" data-volume="0.8"></audio>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = gsap.timeline({ paused: true });
+    </script>
+  </body>
+</html>
