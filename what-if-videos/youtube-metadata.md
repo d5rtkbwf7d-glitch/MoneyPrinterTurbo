@@ -239,6 +239,29 @@ what if, what if your crush could hear your thoughts, crush, my crush, mind read
 
 ---
 
+## 11. Your Brain Is Hiding Something From You
+File: `brain-hiding/what-if-brain-hiding.mp4`
+
+**Title:** Your Brain Is Hiding Something From You… Right Now 🧠👁️
+
+**Description:**
+```
+Each of your eyes has a BLIND SPOT, a place where you literally cannot see. 👁️
+
+So why don't you notice a black hole in your vision? Because your brain quietly fills it in using what's around it. 🧠🎨
+
+What you see isn't a recording of reality. It's your brain's best guess. So… what else are you missing? 👇
+
+#Brain #Science #BlindSpot #Shorts #MindBlown
+```
+
+**Tags:**
+```
+blind spot, eye blind spot, optic nerve, how your eyes work, how the brain works, brain facts, perception, optical illusion, your brain fills in, visual perception, neuroscience, psychology facts, mind blowing facts, science facts, science animation, shorts
+```
+
+---
+
 ## Upload tips
 - **Hashtags:** keep 3 to 5 per description. The first three show above the title, and more than 15 makes YouTube ignore all of them.
 - **First line:** your hook. It's what viewers see before tapping "more".

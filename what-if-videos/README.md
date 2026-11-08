@@ -12,6 +12,7 @@ Each folder is one episode: the final video (`what-if-*.mp4`) plus everything us
 | `silence/` | What if every sound on Earth suddenly vanished? | flat cartoon | 54 s |
 | `simulation/` | What if your entire life was a simulation? | flat cartoon | 53 s |
 | `ocean/` | What if the oceans rose into the sky? | flat cartoon | 56 s |
+| `brain-hiding/` | Your brain is hiding something from you (blind spot, no music) | flat cartoon | 50 s |
 | `crush-thoughts/` | What if your crush could hear your thoughts? (no music, 2 voices) | flat cartoon | 56 s |
 | `musk-machine/` | What if all of Elon Musk's companies are one giant machine? (no music) | flat cartoon | 77 s |
 | `longform-demographics/` | What if there are fewer of us? (long-form, 1920×1080) | flat cartoon | 9:59 |
