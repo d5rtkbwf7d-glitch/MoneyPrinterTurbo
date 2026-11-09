@@ -285,6 +285,47 @@ what if, what if you could stop time, stop time, time freeze, freeze time, super
 
 ---
 
+## Long-form: Why Can't You Hear Explosions in Space? (Jack & Tilly)
+File: `longform-space-sound/sound-in-space-jack-and-tilly.mp4` (regular upload, not a Short)
+
+**Title:** Why Can't You Hear Explosions in Space? 🚀🔇 (But Radios Work!)
+
+**Description:**
+```
+A robot explodes right outside Jack's spaceship. He sees the flash… and hears nothing. 🚀🔇
+So how can Tilly's radio get through when a massive explosion can't?
+
+In this video:
+✅ How sound actually travels (try it with a table at home!)
+✅ The bell jar experiment: why the ringing fades when the air is pumped out
+✅ Why light crosses space but sound can't
+✅ How astronauts talk by radio
+✅ How you can "hear" through the ground on the Moon
+✅ What Jack hears when a piece of robot hits his window
+
+Chapters:
+0:00 Intro: the silent explosion
+0:41 How sound travels
+0:58 The stadium wave
+1:28 The bell jar experiment
+2:05 Why space is silent
+2:22 How radios work in space
+3:28 Hearing through the ground on the Moon
+4:20 What happens when it hits the window?
+4:47 What should we explore next?
+
+Which should we explore next: crying in space, or how high you could jump on the Moon? Tell us in the comments 👇
+
+#Science #Space #Physics
+```
+
+**Tags:**
+```
+sound in space, why is space silent, can you hear in space, explosions in space, how sound travels, bell jar experiment, vacuum sound experiment, how radios work in space, astronaut radio, sound waves, radio waves, sound on the moon, science for kids, physics explained, space science, stick figure animation
+```
+
+---
+
 ## Upload tips
 - **Hashtags:** keep 3 to 5 per description. The first three show above the title, and more than 15 makes YouTube ignore all of them.
 - **First line:** your hook. It's what viewers see before tapping "more".

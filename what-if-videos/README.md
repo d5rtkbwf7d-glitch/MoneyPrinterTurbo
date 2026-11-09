@@ -18,6 +18,7 @@ Each folder is one episode: the final video (`what-if-*.mp4`) plus everything us
 | `crush-thoughts/` | What if your crush could hear your thoughts? (no music, 2 voices) | flat cartoon | 56 s |
 | `musk-machine/` | What if all of Elon Musk's companies are one giant machine? (no music) | flat cartoon | 77 s |
 | `longform-demographics/` | What if there are fewer of us? (long-form, 1920×1080) | flat cartoon | 9:59 |
+| `longform-space-sound/` | Jack & Tilly: why can't you hear explosions in space? (long-form, 3 voices, no music) | stick figure | 5:10 |
 | `longform-first-home/` | How to Buy Your First House on a Median Income (long-form, 1920×1080) | flat cartoon | 4:52 |
 
 ## Rebuild an episode

@@ -1,0 +1,384 @@
+[
+ {
+  "scene": "ship",
+  "text": "Three... two... one...",
+  "spk": "n",
+  "kick": null,
+  "params": {
+   "mode": "count"
+  }
+ },
+ {
+  "scene": "ship",
+  "text": "Did you see that explosion? Go on, turn the volume up.",
+  "spk": "n",
+  "kick": null,
+  "params": {
+   "mode": "boom"
+  }
+ },
+ {
+  "scene": "ship",
+  "text": "Still nothing?",
+  "spk": "n",
+  "kick": null,
+  "params": {
+   "mode": "vol"
+  }
+ },
+ {
+  "scene": "ship",
+  "text": "That robot just blew itself to pieces right outside Jack's spaceship. He saw the flash. He saw a piece of its head fly past the window. And he didn't hear a thing.",
+  "spk": "n",
+  "kick": "SILENT EXPLOSION",
+  "params": {
+   "mode": "head"
+  }
+ },
+ {
+  "scene": "ship",
+  "text": "But if Tilly floats past that same window and says,",
+  "spk": "n",
+  "kick": null,
+  "params": {
+   "mode": "tilly"
+  }
+ },
+ {
+  "scene": "ship",
+  "text": "Jack, did you break another robot?",
+  "spk": "t",
+  "kick": null,
+  "params": {
+   "mode": "tilly",
+   "say": "Jack, did you break another robot?"
+  },
+  "tight": true
+ },
+ {
+  "scene": "ship",
+  "text": "he can hear her loud and clear over the radio.",
+  "spk": "n",
+  "kick": null,
+  "params": {
+   "mode": "tilly",
+   "radio": true
+  }
+ },
+ {
+  "scene": "questions",
+  "text": "So how does a little radio get a message across space when a massive explosion can't get a single bang through? And what happens if a piece of that robot actually hits Jack's window?",
+  "spk": "n",
+  "kick": "TWO BIG QUESTIONS",
+  "params": {}
+ },
+ {
+  "scene": "table",
+  "text": "Let's start with something you can try at home. Tap a table with your finger.",
+  "spk": "n",
+  "kick": "TRY IT AT HOME",
+  "params": {
+   "mode": "tap"
+  }
+ },
+ {
+  "scene": "table",
+  "text": "That little knock starts with the tabletop vibrating. It pushes on the air beside it. Those air particles nudge their neighbours, and the disturbance travels through the air until it reaches your ear.",
+  "spk": "n",
+  "kick": "HOW SOUND TRAVELS",
+  "params": {
+   "mode": "air"
+  }
+ },
+ {
+  "scene": "stadium",
+  "text": "Picture a crowd doing a wave at a footy match. One person stands up, then the next, then the next. The wave goes all the way around the stadium, but everyone stays by their own seat.",
+  "spk": "n",
+  "kick": "THE STADIUM WAVE",
+  "params": {
+   "mode": "wave"
+  }
+ },
+ {
+  "scene": "airChain",
+  "text": "Sound works a bit like that. The vibration moves along as each bit of air pushes on the next.",
+  "spk": "n",
+  "kick": "SOUND = A WAVE THROUGH AIR",
+  "params": {}
+ },
+ {
+  "scene": "stadium",
+  "text": "Now imagine Jack is the only person in the stadium. He jumps up, throws both arms in the air, and looks around.",
+  "spk": "n",
+  "kick": null,
+  "params": {
+   "mode": "alone"
+  }
+ },
+ {
+  "scene": "stadium",
+  "text": "Absolutely nothing. He's going to be there a while.",
+  "spk": "n",
+  "kick": "NO NEIGHBOURS, NO WAVE",
+  "params": {
+   "mode": "alone2"
+  }
+ },
+ {
+  "scene": "bell",
+  "text": "So Tilly decides to try an experiment. She hangs a battery-powered bell inside a clear chamber. The bell rings, and you can see its little hammer going back and forth.",
+  "spk": "n",
+  "kick": "THE BELL JAR EXPERIMENT",
+  "params": {
+   "mode": "ring"
+  }
+ },
+ {
+  "scene": "bell",
+  "text": "Then Jack switches on a pump and starts pulling air out of the chamber. The ringing gets quieter. And quieter.",
+  "spk": "n",
+  "kick": null,
+  "params": {
+   "mode": "pump"
+  }
+ },
+ {
+  "scene": "bell",
+  "text": "Jack looks at Tilly.",
+  "spk": "n",
+  "kick": null,
+  "params": {
+   "mode": "pumped"
+  }
+ },
+ {
+  "scene": "bell",
+  "text": "Reckon the battery's dead?",
+  "spk": "j",
+  "kick": null,
+  "params": {
+   "mode": "pumped",
+   "say": "Reckon the battery's dead?",
+   "who": "j"
+  },
+  "tight": true
+ },
+ {
+  "scene": "bell",
+  "text": "Look at the hammer, Jack.",
+  "spk": "t",
+  "kick": null,
+  "params": {
+   "mode": "pumped",
+   "say": "Look at the hammer, Jack.",
+   "who": "t"
+  },
+  "tight": true
+ },
+ {
+  "scene": "bell",
+  "text": "It's still moving. The bell is still vibrating. But with much less air in the chamber, much less sound reaches us. Tilly lets the air back in, and the ringing gets louder again.",
+  "spk": "n",
+  "kick": "STILL VIBRATING, LESS AIR",
+  "params": {
+   "mode": "back"
+  }
+ },
+ {
+  "scene": "spaceGap",
+  "text": "Now think about that robot. The light from the explosion can travel across empty space, which is how Jack sees the flash. Sound needs matter to carry its vibrations. Between the robot and the ship, there's too little matter for Jack to hear that familiar movie-style boom.",
+  "spk": "n",
+  "kick": "LIGHT YES, SOUND NO",
+  "params": {}
+ },
+ {
+  "scene": "spacewalk",
+  "text": "So what about the radio? Imagine Jack and Tilly are both outside the ship. Jack waves and yells,",
+  "spk": "n",
+  "kick": "WHAT ABOUT THE RADIO?",
+  "params": {
+   "mode": "yell"
+  }
+ },
+ {
+  "scene": "spacewalk",
+  "text": "Tilly! Can you hear me?",
+  "spk": "j",
+  "kick": null,
+  "params": {
+   "mode": "yell",
+   "say": "Tilly! Can you hear me?",
+   "who": "j"
+  },
+  "tight": true
+ },
+ {
+  "scene": "spacewalk",
+  "text": "Jack hears himself because there's air inside his helmet. Tilly has air inside hers, too. But her helmet is a few metres away, and there's almost nothing in between to carry his voice.",
+  "spk": "n",
+  "kick": "AIR IN HELMETS, NOTHING BETWEEN",
+  "params": {
+   "mode": "gap"
+  }
+ },
+ {
+  "scene": "spacewalk",
+  "text": "Then Jack presses the radio button.",
+  "spk": "n",
+  "kick": null,
+  "params": {
+   "mode": "radio"
+  }
+ },
+ {
+  "scene": "spacewalk",
+  "text": "Tilly, can you hear me now?",
+  "spk": "j",
+  "kick": null,
+  "params": {
+   "mode": "radio",
+   "say": "Tilly, can you hear me now?",
+   "who": "j"
+  },
+  "tight": true
+ },
+ {
+  "scene": "spacewalk",
+  "text": "Yep. You can stop shouting.",
+  "spk": "t",
+  "kick": null,
+  "params": {
+   "mode": "radio",
+   "say": "Yep. You can stop shouting.",
+   "who": "t"
+  },
+  "tight": true
+ },
+ {
+  "scene": "chain3",
+  "text": "Here's what just happened. Jack's voice travelled through the air inside his helmet and reached a microphone. The microphone turned those vibrations into an electrical signal. The radio sent that message across space as radio waves, which can travel through a vacuum.",
+  "spk": "n",
+  "kick": "SOUND TO RADIO WAVES",
+  "params": {
+   "step": 1
+  }
+ },
+ {
+  "scene": "chain3",
+  "text": "Tilly's radio picked up the signal. Her speaker vibrated, moved the air inside her helmet, and made sound she could hear.",
+  "spk": "n",
+  "kick": "RADIO WAVES TO SOUND",
+  "params": {
+   "step": 2
+  }
+ },
+ {
+  "scene": "chain3",
+  "text": "So the trip had three parts. Sound from Jack's mouth to his microphone. Radio waves between the helmets. Then sound again from Tilly's speaker to her ears.",
+  "spk": "n",
+  "kick": "THREE PARTS",
+  "params": {
+   "step": 3
+  }
+ },
+ {
+  "scene": "moon",
+  "text": "Now let's take the same idea to the Moon. Jack gives a rock a tap with a hammer. Tilly stands a few steps away. She doesn't hear a knock through the space between them, but something interesting is happening right under her boots.",
+  "spk": "n",
+  "kick": "ON THE MOON",
+  "params": {
+   "mode": "tap"
+  }
+ },
+ {
+  "scene": "moon",
+  "text": "The rock vibrates, and some of that vibration spreads through the ground.",
+  "spk": "n",
+  "kick": "THROUGH THE GROUND",
+  "params": {
+   "mode": "ground"
+  }
+ },
+ {
+  "scene": "tableEar",
+  "text": "Try this with the table from earlier. Put your ear against the tabletop and tap gently at the other end. Now lift your head and tap again. Hear the difference? When your ear is against the table, the vibrations have another way to reach you, through the solid wood.",
+  "spk": "n",
+  "kick": "TRY IT: EAR ON THE TABLE",
+  "params": {}
+ },
+ {
+  "scene": "moon",
+  "text": "On the Moon, Tilly places a sensitive vibration sensor on the ground. Jack taps the rock again. A little squiggle appears on her screen. She can turn that recording into audio and play it back through her helmet speaker.",
+  "spk": "n",
+  "kick": "A VIBRATION SENSOR",
+  "params": {
+   "mode": "sensor"
+  }
+ },
+ {
+  "scene": "moon",
+  "text": "And there it is. A little knock, picked up through the ground.",
+  "spk": "n",
+  "kick": null,
+  "params": {
+   "mode": "sensor2"
+  }
+ },
+ {
+  "scene": "ship",
+  "text": "Which brings us back to Jack's window. A piece of the robot is drifting straight towards it. This time, it hits the glass.",
+  "spk": "n",
+  "kick": "BACK TO THE WINDOW",
+  "params": {
+   "mode": "impact"
+  }
+ },
+ {
+  "scene": "ship",
+  "text": "Do you reckon Jack hears it?",
+  "spk": "n",
+  "kick": null,
+  "params": {
+   "mode": "impact2"
+  }
+ },
+ {
+  "scene": "ship",
+  "text": "Yes, if the impact makes the window vibrate enough. The glass can pass that vibration into the air inside the ship, and the air carries the sound to Jack's ears.",
+  "spk": "n",
+  "kick": "GLASS, THEN AIR, THEN EARS",
+  "params": {
+   "mode": "inside"
+  }
+ },
+ {
+  "scene": "splitView",
+  "text": "From outside, the shot is silent. From inside, Jack hears one little tap.",
+  "spk": "n",
+  "kick": "OUTSIDE: SILENT. INSIDE: TAP.",
+  "params": {}
+ },
+ {
+  "scene": "cta",
+  "text": "Now tell me in the comments which question you want us to explore next. What happens when you cry in space? Or how high could you jump on the Moon?",
+  "spk": "n",
+  "kick": "WHAT SHOULD WE EXPLORE NEXT?",
+  "params": {}
+ },
+ {
+  "scene": "cta",
+  "text": "And if you enjoy surprising facts and the science behind them, subscribe for more videos like this. See you in the next one!",
+  "spk": "n",
+  "kick": null,
+  "params": {
+   "mode": "sub"
+  }
+ },
+ {
+  "scene": "endcard",
+  "text": null,
+  "kick": null,
+  "params": {},
+  "dur": 6.0
+ }
+]
