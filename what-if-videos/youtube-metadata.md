@@ -329,27 +329,42 @@ sound in space, why is space silent, can you hear in space, explosions in space,
 ## 13. What If the AI Race Is Won by the AI That Knows You Best?
 File: `meta-knows-you/what-if-ai-knows-you-best.mp4`
 
-**Title:** What If the AI That Wins Is the One That Knows You Best? 🤖👀
+**Title options** (pick one; all under 60 characters):
+1. Meta Is Losing the AI Race… Or Is It? 👀
+2. Meta Doesn't Need the Smartest AI. Here's Why 🤯
+3. The AI That Wins Might Already Know You 👀
 
 **Description:**
 ```
-Meta looked like it was losing the AI race… so it started spending. 💸
-Scale AI, a superintelligence lab, giant data centers, its own chips, nuclear power.
+Meta looked like it was losing the AI race… so it went on a spending spree. 💸
 
-But money and chips can be bought. Meta's real advantage can't: 20 years of posts, likes, photos, friends, and billions of people using its apps every day. 👀
+👉 About $14B into Scale AI
+👉 A new "Superintelligence" lab
+👉 Huge pay offers to top researchers
+👉 Gigawatt data centers, its own chips, nuclear power
 
-Search engines learn your questions. Chatbots learn your prompts. A social network learns your life.
+But money and chips can be bought. Meta's real advantage can't. 👀
+20 years of posts, likes, photos and friends, from billions of people every day.
 
-Would you want an AI that knows you this well? 👇
+Search engines learn your questions.
+Chatbots learn your prompts.
+A social network learns your life.
 
-An animated "what if" explainer. Not affiliated with any company mentioned. Figures are approximate and based on public reporting.
+So would YOU want an AI that knows you this well? Tell me below 👇
 
-#WhatIf #AI #Meta #Shorts #Privacy
+Animated "what if" explainer. Not affiliated with any company mentioned. Figures are approximate, based on public reporting.
+
+#WhatIf #AI #Meta
 ```
 
 **Tags:**
 ```
-what if, meta ai, ai race, meta superintelligence labs, scale ai, prometheus data center, hyperion data center, mtia chip, meta nuclear power, data privacy, meta pixel, ray-ban meta glasses, whatsapp encryption, personal ai, tech explained, shorts
+meta ai, ai race, meta superintelligence, mark zuckerberg ai, scale ai, meta data center, mtia, meta nuclear, data privacy, how meta uses your data, personal ai, openai vs meta, google vs meta, ai explained, tech news, what if, shorts
+```
+
+**Pinned comment:**
+```
+Would you trust an AI that knows you this well? Yes or no 👇
 ```
 
 ---
