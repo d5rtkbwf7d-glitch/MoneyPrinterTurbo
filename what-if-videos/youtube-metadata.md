@@ -359,7 +359,7 @@ Animated "what if" explainer. Not affiliated with any company mentioned. Figures
 
 **Tags:**
 ```
-meta ai, ai race, meta superintelligence, mark zuckerberg ai, scale ai, meta data center, mtia, meta nuclear, data privacy, how meta uses your data, personal ai, openai vs meta, google vs meta, ai explained, tech news, what if, shorts
+meta ai, ai race, meta superintelligence, scale ai, meta data center, mtia, meta nuclear, data privacy, how meta uses your data, personal ai, openai vs meta, google vs meta, ai explained, tech news, what if, shorts
 ```
 
 **Pinned comment:**
