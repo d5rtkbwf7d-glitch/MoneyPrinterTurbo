@@ -408,6 +408,48 @@ Have you preloaded GTA 6 yet? 🔒 Yes / Not yet 👇
 
 ---
 
+## Long-form: Nvidia, Alice Huang and the warnings (`longform-nvidia/`)
+
+**Title (pick one):**
+- Nvidia's CEO, a Suspected Spy, and the Warnings Washington Got
+- Who Warned Washington About Nvidia's CEO? And Why Did the Chips Keep Moving?
+- The Nvidia Scandal Isn't About the Affair
+
+**Description:**
+```
+Everyone's asking whether Nvidia's CEO had an affair with a spy. The bigger question is for Washington: who got warned, when did they know, and why did the chips keep moving?
+
+In this video: how Jensen Huang built Nvidia from a diner booth into the company behind the AI boom, why the U.S. locked China out of its best AI chips, the workarounds, the warnings officials reportedly received, and the four days in November that ended with his resignation.
+
+0:00 The question
+0:43 The man with the key
+1:51 The locked door
+2:41 The workaround
+3:24 The warnings
+4:02 Four days in November
+5:03 Two questions
+
+Sources: reporting by The New York Times, CNN, Reuters and The Information, plus public statements from Nvidia, U.S. senators, the U.S. attorney general and China's Foreign Ministry.
+
+This video is based on public reporting. Allegations described here are unproven, disputed, and have not been tested in court. Whether Alice Huang knowingly worked for Beijing is unresolved.
+
+Who should answer for this? Tell me in the comments.
+
+#Nvidia #AI #ChipWar
+```
+
+**Tags:**
+```
+nvidia, jensen huang, nvidia ceo, nvidia scandal, alice huang, megaspeed, nvidia spy, ai chips, export controls, chip war, us china, china ai chips, nvidia china, chip smuggling, washington warnings, us senate, national security, colette kress, ai news, tech news explained
+```
+
+**Pinned comment:**
+```
+Two separate questions: did she knowingly work for Beijing, and how did Washington handle the warnings? Which one matters more to you? 👇
+```
+
+---
+
 ## Upload tips
 - **Hashtags:** keep 3 to 5 per description. The first three show above the title, and more than 15 makes YouTube ignore all of them.
 - **First line:** your hook. It's what viewers see before tapping "more".
