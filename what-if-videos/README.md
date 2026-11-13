@@ -24,6 +24,7 @@ Each folder is one episode: the final video (`what-if-*.mp4`) plus everything us
 | `longform-space-sound/` | Jack & Tilly: why can't you hear explosions in space? (long-form, 3 voices, no music) | stick figure | 5:10 |
 | `longform-first-home/` | How to Buy Your First House on a Median Income (long-form, 1920×1080) | flat cartoon | 4:52 |
 | `longform-nvidia/` | Nvidia, Alice Huang and the warnings Washington got (long-form, 1920×1080, no music, sourced and hedged) | flat cartoon | 6:09 |
+| `no-lies-24h/` | What if every human lost the ability to lie for 24 hours? (no music) | flat cartoon | 64 s |
 
 ## Rebuild an episode
 

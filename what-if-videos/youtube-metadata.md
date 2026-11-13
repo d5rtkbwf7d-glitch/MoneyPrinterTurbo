@@ -450,6 +450,38 @@ Two separate questions: did she knowingly work for Beijing, and how did Washingt
 
 ---
 
+## 15. What If Every Human Lost the Ability to Lie for 24 Hours? (`no-lies-24h/`)
+
+**Title:** What If Nobody Could Lie for 24 Hours? 🤐
+
+**Description:**
+```
+At midnight, every human on Earth loses the ability to lie. For 24 hours. And the first person it ruins… is you. 😳
+
+⏰ 7 AM: Mom's new haircut
+💼 9 AM: why you were late
+🎤 Noon: a 4-second press conference
+❤️ 6 PM: the one question you can't answer with "I'm fine"
+
+Then midnight comes, and Mom texts you… 👀
+
+Would you survive 24 hours of truth? Tell me in the comments 👇
+
+#WhatIf #Shorts #Truth
+```
+
+**Tags:**
+```
+what if, what if nobody could lie, what if you couldnt lie, 24 hours of truth, no lies for 24 hours, honesty, truth challenge, what if scenarios, thought experiment, psychology, animated story, cartoon story, funny what if, shorts, what if shorts
+```
+
+**Pinned comment:**
+```
+Who would you be most scared to talk to on Truth Day? 😅👇
+```
+
+---
+
 ## Upload tips
 - **Hashtags:** keep 3 to 5 per description. The first three show above the title, and more than 15 makes YouTube ignore all of them.
 - **First line:** your hook. It's what viewers see before tapping "more".
