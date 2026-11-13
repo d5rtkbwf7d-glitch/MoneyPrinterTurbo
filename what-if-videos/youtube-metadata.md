@@ -369,6 +369,45 @@ Would you trust an AI that knows you this well? Yes or no 👇
 
 ---
 
+## 14. GTA 6 Is Already On Your PS5… But Locked
+File: `gta-preload/gta6-preload-locked.mp4`
+
+**Title options:**
+1. GTA 6 Is On Your PS5… But You Can't Play It 🔒
+2. Why Your Preloaded GTA 6 Won't Open 🔒
+3. GTA 6 Is Downloaded. So Why Is It Locked? 🎮
+
+**Description:**
+```
+GTA 6 could already be sitting on your PS5, fully downloaded… and you still can't play it. 🔒🎮
+
+Here's what's really going on with preloads:
+🔐 The game files arrive encrypted
+🗝️ The unlock key isn't part of the download
+⏰ At launch, your console checks in, confirms you own it, and gets the key
+🚀 That's why launch night is a tiny unlock, not a giant download
+
+And the twist: more boxed games now come with a download code instead of a disc. 👀
+
+Have you preloaded yet? Send this to the friend who's counting down the days 👇
+
+Not affiliated with Rockstar Games or PlayStation. Launch details can change; check official sources.
+
+#GTA6 #PS5 #Shorts
+```
+
+**Tags:**
+```
+gta 6, gta 6 preload, gta 6 release date, gta 6 ps5, gta vi, preload explained, how preloading works, why preloaded games are locked, ps5 preload, game encryption, day one patch, gta 6 download size, gta 6 digital, gaming explained, shorts
+```
+
+**Pinned comment:**
+```
+Have you preloaded GTA 6 yet? 🔒 Yes / Not yet 👇
+```
+
+---
+
 ## Upload tips
 - **Hashtags:** keep 3 to 5 per description. The first three show above the title, and more than 15 makes YouTube ignore all of them.
 - **First line:** your hook. It's what viewers see before tapping "more".

@@ -16,6 +16,7 @@ Each folder is one episode: the final video (`what-if-*.mp4`) plus everything us
 | `brain-hiding-whiteboard/` | Same episode, whiteboard doodle style (reuses `brain-hiding/` audio) | whiteboard doodle | 50 s |
 | `brain-hiding/` | Your brain is hiding something from you (blind spot, no music) | flat cartoon | 50 s |
 | `crush-thoughts/` | What if your crush could hear your thoughts? (no music, 2 voices) | flat cartoon | 56 s |
+| `gta-preload/` | GTA 6 is preloaded but locked: how preloads work (no music) | flat cartoon | 79 s |
 | `meta-knows-you/` | What if the AI race is won by the AI that knows you best? (Meta, no music) | flat cartoon | 80 s |
 | `musk-machine/` | What if all of Elon Musk's companies are one giant machine? (no music) | flat cartoon | 77 s |
 | `longform-demographics/` | What if there are fewer of us? (long-form, 1920×1080) | flat cartoon | 9:59 |
