@@ -32,6 +32,7 @@ Each folder is one episode: the final video (`what-if-*.mp4`) plus everything us
 | `ten-year-old-self/` | What if you met your 10-year-old self for 1 hour? | flat cartoon | 50 s |
 | `nvidia-ai-factory/` | What if Nvidia isn't just selling chips? | flat cartoon | 52 s |
 | `photos-public/` | What if every photo you ever took went public tomorrow? | flat cartoon | 44 s |
+| `deposit-90k/` | Same house, $90K deposit difference (first-home teaser, Aussie voice, no music) | flat cartoon | 28 s |
 
 ## Rebuild an episode
 
