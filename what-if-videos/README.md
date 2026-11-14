@@ -29,6 +29,9 @@ Each folder is one episode: the final video (`what-if-*.mp4`) plus everything us
 | `gta6-laptop/` | Can hackers run GTA 6 on a laptop? (English remake of a Hindi reel, facts unchanged, no music) | flat cartoon | 2:55 |
 | `live-to-200/` | What if humans lived to 200? (landlord great-grandad, no music) | flat cartoon | 55 s |
 | `nine-generations/` | 200th birthday: nine generations in one photo (no music) | flat cartoon | 54 s |
+| `ten-year-old-self/` | What if you met your 10-year-old self for 1 hour? | flat cartoon | 50 s |
+| `nvidia-ai-factory/` | What if Nvidia isn't just selling chips? | flat cartoon | 52 s |
+| `photos-public/` | What if every photo you ever took went public tomorrow? | flat cartoon | 44 s |
 
 ## Rebuild an episode
 
