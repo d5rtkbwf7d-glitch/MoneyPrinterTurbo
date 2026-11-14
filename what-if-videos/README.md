@@ -34,6 +34,7 @@ Each folder is one episode: the final video (`what-if-*.mp4`) plus everything us
 | `photos-public/` | What if every photo you ever took went public tomorrow? | flat cartoon | 44 s |
 | `deposit-90k/` | Same house, $90K deposit difference (first-home teaser, Aussie voice, no music) | flat cartoon | 28 s |
 | `credit-card-limit/` | $0 owing, but your card limit can still cut borrowing power (first-home teaser, Aussie voice) | flat cartoon | 22 s |
+| `gta6-blackout/` | What if GTA 6 blacked out the planet? (remake of a reel, original wording, no music) | flat cartoon | 81 s |
 
 ## Rebuild an episode
 
