@@ -25,6 +25,7 @@ Each folder is one episode: the final video (`what-if-*.mp4`) plus everything us
 | `longform-first-home/` | How to Buy Your First House on a Median Income (long-form, 1920×1080) | flat cartoon | 4:52 |
 | `longform-nvidia/` | Nvidia, Alice Huang and the warnings Washington got (long-form, 1920×1080, no music, sourced and hedged) | flat cartoon | 6:09 |
 | `no-lies-24h/` | What if every human lost the ability to lie for 24 hours? (no music) | flat cartoon | 64 s |
+| `ms-outage/` | Microsoft 365 outage: one company down, the world goes with it (remake of a reel, original wording, no music) | flat cartoon | 62 s |
 
 ## Rebuild an episode
 

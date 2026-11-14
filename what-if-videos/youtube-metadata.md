@@ -482,6 +482,38 @@ Who would you be most scared to talk to on Truth Day? 😅👇
 
 ---
 
+## 16. Microsoft Went Down. Why Did the World Go With It? (`ms-outage/`)
+
+**Title:** Microsoft Went Down… and 74 Countries Felt It 😳
+
+**Description:**
+```
+Microsoft went down, and it was much bigger than a few missing emails. 📉
+
+🌍 Reports from 74 countries within about an hour
+🏛️ Government agencies in Australia and Japan hit
+✈️ Airlines couldn't email customers
+📠 A firm in Taiwan reportedly confirmed trades… by fax
+
+Microsoft says there's no sign of a hack. So why does one company going offline take so much of the world with it?
+
+Sources: Reuters, Downdetector user reports, Microsoft 365 status updates.
+
+#Microsoft #Outage #Shorts
+```
+
+**Tags:**
+```
+microsoft outage, microsoft 365 down, outlook down, teams down, copilot down, microsoft down, global outage, cloud outage, tech news, big tech, internet outage, fax machine 2026, tech explained, shorts
+```
+
+**Pinned comment:**
+```
+Should the world depend this much on one company? Yes / No 👇
+```
+
+---
+
 ## Upload tips
 - **Hashtags:** keep 3 to 5 per description. The first three show above the title, and more than 15 makes YouTube ignore all of them.
 - **First line:** your hook. It's what viewers see before tapping "more".
