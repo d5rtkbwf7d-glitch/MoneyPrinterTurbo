@@ -514,6 +514,40 @@ Should the world depend this much on one company? Yes / No 👇
 
 ---
 
+## 17. Hackers Downloaded GTA 6… So Why Can't It Run on a Laptop? (`gta6-laptop/`)
+
+**Title:** Hackers Have GTA 6's Files… But It Won't Run on Your Laptop 🔒
+
+**Description:**
+```
+Before GTA 6 even launched, hackers downloaded its files onto a PC. So why can't it run on a laptop? Because those 200 GB are a locked box. 🔒
+
+To run a PS5 game on a laptop, 3 things have to happen:
+1️⃣ An emulator (these already exist)
+2️⃣ Get past the lock: encryption, the chain of trust and Sony's newest software (14.22)
+3️⃣ Make it fast enough: shader translation
+
+One PS5 emulator tested 55 games: 12 reached gameplay, 6 ran at 60 FPS, and all of them were small games. GTA 6 is a whole 200 GB city.
+
+The answer: not today. Maybe someday.
+
+Will GTA 6 get hacked on a laptop first, or will its PC version come out first? 👇
+
+#GTA6 #PS5 #Shorts
+```
+
+**Tags:**
+```
+gta 6, gta 6 pc, gta 6 laptop, gta 6 leak, gta 6 hackers, ps5 emulator, ps5 jailbreak, chain of trust, bootrom leak, ps5 encryption, shader translation, game dump, gta 6 pc release, gaming explained, shorts
+```
+
+**Pinned comment:**
+```
+Hacked on a laptop first 💻 or official PC version first 🖥️? 👇
+```
+
+---
+
 ## Upload tips
 - **Hashtags:** keep 3 to 5 per description. The first three show above the title, and more than 15 makes YouTube ignore all of them.
 - **First line:** your hook. It's what viewers see before tapping "more".

@@ -1,0 +1,22 @@
+[
+ "Before GTA 6 even launched, hackers downloaded its files onto a PC. And now everyone thinks it'll run on a laptop too.",
+ "But here's the real secret. The 200 gigabytes they pulled is a locked box that no laptop today can open.",
+ "How? Let's break it down. Having the files and running the game are two different things. To run a PS5 game on a laptop, three things have to happen.",
+ "One: teach the laptop to act like a PS5. That kind of program is called an emulator. And these already exist, so here the answer is yes.",
+ "But an emulator doesn't come with a single game. You have to bring the game yourself, and that's where the no begins.",
+ "The 200 gigabytes the hackers grabbed is a sealed box. Every PS5 game comes encrypted, and the key lives only inside the PS5's chip. That's why people digging through the files saw only file names. Not one scene. Not one map.",
+ "When a PS5 turns on, the chip's first guard checks the next one, that one checks the next, all the way up to the game. Every step needs Sony's signature. This is called the chain of trust.",
+ "Hackers found a bug in this chain's software and ran their own code. That's called a jailbreak.",
+ "Sony sends an update, and the bug is closed. Hackers find a new bug. A game of cops and robbers.",
+ "And for GTA 6, Sony made a big move. The game will only run on the PS5's newest software, which came out 17 days before launch. Jailbroken PS5s are stuck on older software, so GTA 6 won't even open there.",
+ "On a jailbroken PS5, the game unlocks, and a copy goes to the laptop. That's called a dump. A GTA 6 dump? Nobody has one yet.",
+ "So you'd need your own PS5, on old software, and a game you bought yourself. Grab it off the internet, and that's piracy.",
+ "Task three: even if you get the game, it runs slowly. PS5 games talk to the GPU in Sony's own language. A laptop's GPU doesn't understand that language.",
+ "So the emulator translates every drawing instruction while the game is running. That's called shader translation. It takes time, and the picture stutters.",
+ "The result? One emulator tested 55 games. 12 reached gameplay. 6 ran at 60 FPS. And they were all small games. And GTA 6? A whole 200 gigabyte city.",
+ "Now the most interesting part. Remember that first guard? Its key is written into the chip at the factory. That's called the BootROM.",
+ "On the last day of last year, these keys leaked onto the internet, and no update can change them. For every PS5 already sold, this lock is open forever.",
+ "But the locks above it, the new software and the game's own key, are still standing. So the answer is: not today. Maybe someday.",
+ "Emulator, encryption, chain of trust, jailbreak, dump, and shader translation. That same chain of trust is inside your phone too.",
+ "So tell me: will GTA 6 get hacked on a laptop first, or will its PC version come out first? Comment below."
+]
