@@ -548,6 +548,55 @@ Hacked on a laptop first 💻 or official PC version first 🖥️? 👇
 
 ---
 
+## 18. What If Humans Lived to 200? (`live-to-200/`)
+
+**Title:** What If Humans Lived to 200? 🎂
+
+**Description:**
+```
+You just blew out 100 candles. Your boss texts: "Only 80 years till retirement." 😅
+
+Welcome to a world where humans live to 200: entry-level jobs want 40 years of experience, your great-grandad owns your childhood home… and he's also your landlord.
+
+Would you live to 200 if your landlord could too? 👇
+
+#WhatIf #Shorts #LiveTo200
+```
+
+**Tags:**
+```
+what if, what if humans lived to 200, living to 200, longevity, live forever, what if scenarios, funny what if, animated story, cartoon story, great grandad, retirement, rent, shorts, what if shorts
+```
+
+---
+
+## 19. Nine Generations in One Photo (`nine-generations/`)
+
+**Title:** What If You Lived to See 9 Generations? 👶👵
+
+**Description:**
+```
+On your 200th birthday, your family has to rent a stadium. Then the hospital calls: "Hold the photo. Generation 8 just arrived." 🏟️
+
+If every generation has its first child at 25, by 200 you could meet eight generations of descendants. That's nine generations in one photo.
+
+Would you want to live long enough to take that photo? 👇
+
+#WhatIf #Shorts #Family
+```
+
+**Tags:**
+```
+what if, what if you lived to 200, nine generations, family tree, generations photo, longevity, great great grandchild, what if scenarios, wholesome, animated story, cartoon story, family, shorts, what if shorts
+```
+
+**Pinned comment:**
+```
+Would you want to live long enough for this photo? 📸 Yes / No 👇
+```
+
+---
+
 ## Upload tips
 - **Hashtags:** keep 3 to 5 per description. The first three show above the title, and more than 15 makes YouTube ignore all of them.
 - **First line:** your hook. It's what viewers see before tapping "more".
