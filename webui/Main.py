@@ -53,6 +53,7 @@ from app.services import (
     loomloom,
     material,
     metaso_minimax,
+    higgsfield,
     muapi,
     infistar_video,
     jalapeno_video,
@@ -144,6 +145,7 @@ VIDEO_SOURCE_GROUPS = {
         "jalapeno",
         "wavespeed",
         "muapi",
+        "higgsfield",
     ),
     "ai_image": ("openai_image", "codex_image"),
     "local": ("local",),
@@ -779,6 +781,7 @@ def _initialize_session_state():
         "ofox_confirm_charge": False,
         "metaso_minimax_confirm_charge": False,
         "muapi_confirm_charge": False,
+        "higgsfield_confirm_charge": False,
         # AI 视频按素材段计费，默认只生成一段，用户确认效果后再主动增加数量。
         "loomloom_video_scene_count": _saved_ui_number(
             "loomloom_video_scene_count",
@@ -3414,6 +3417,7 @@ def _material_provider_labels():
         "jalapeno": tr("Jalapeno Cloud AI Video"),
         "wavespeed": tr("WaveSpeed AI Video"),
         "muapi": tr("MuAPI AI Video"),
+        "higgsfield": tr("Higgsfield Content Factory"),
         "openai_image": tr("OpenAI Compatible Text-to-Image"),
         "codex_image": tr("codex.image.label"),
         "local": tr("Local file"),
@@ -4076,6 +4080,65 @@ def _render_material_provider_settings(provider):
             "muapi_resolution",
             muapi_resolution.strip() or muapi.DEFAULT_RESOLUTION,
         )
+    elif provider == "higgsfield":
+        st.markdown(f"**{tr('Higgsfield Content Factory')}**")
+        st.caption(tr("Higgsfield Content Factory Help"))
+        for config_key, label, secret in (
+            ("higgsfield_api_key", "Higgsfield API Key", True),
+            ("higgsfield_api_secret", "Higgsfield API Secret", True),
+            ("higgsfield_video_model", "Higgsfield Video Model", False),
+        ):
+            value = st.text_input(
+                tr(label),
+                value=str(app_settings.get(config_key, "") or ""),
+                type="password" if secret else "default",
+                help=tr(f"{label} Help"),
+                key=f"{config_key}_input",
+                on_change=_save_settings_change,
+                args=("app", config_key, f"{config_key}_input", lambda v: v.strip()),
+            )
+            _set_runtime_config("app", config_key, value.strip())
+        higgsfield_image_model = st.text_input(
+            tr("Higgsfield Image Model"),
+            value=str(
+                app_settings.get("higgsfield_image_model", higgsfield.DEFAULT_IMAGE_MODEL)
+                or ""
+            ),
+            help=tr("Higgsfield Image Model Help"),
+            key="higgsfield_image_model_input",
+            on_change=_save_settings_change,
+            args=(
+                "app",
+                "higgsfield_image_model",
+                "higgsfield_image_model_input",
+                lambda v: v.strip(),
+            ),
+        )
+        _set_runtime_config("app", "higgsfield_image_model", higgsfield_image_model.strip())
+        preset_options = list(higgsfield.STYLE_PRESETS)
+        configured_preset = str(
+            app_settings.get("higgsfield_style_preset", higgsfield.DEFAULT_STYLE_PRESET)
+            or higgsfield.DEFAULT_STYLE_PRESET
+        )
+        higgsfield_preset = st.selectbox(
+            tr("Higgsfield Style Preset"),
+            options=preset_options,
+            index=(
+                preset_options.index(configured_preset)
+                if configured_preset in preset_options
+                else 0
+            ),
+            help=tr("Higgsfield Style Preset Help"),
+            key="higgsfield_style_preset_input",
+        )
+        _set_runtime_config("app", "higgsfield_style_preset", higgsfield_preset)
+        higgsfield_style = st.text_area(
+            tr("Higgsfield Custom Style"),
+            value=str(app_settings.get("higgsfield_style_prompt", "") or ""),
+            help=tr("Higgsfield Custom Style Help"),
+            key="higgsfield_style_prompt_input",
+        )
+        _set_runtime_config("app", "higgsfield_style_prompt", higgsfield_style.strip())
     elif provider == "codex_image":
         st.markdown(f"**{tr('codex.image.label')}**")
         st.caption(tr("codex.image.help"))
@@ -6045,6 +6108,7 @@ def _render_video_settings(panel, params):
                 "ofox": tr("OFox AI Video"),
                 "metaso_minimax": tr("Metaso MiniMax H3"),
                 "muapi": tr("MuAPI AI Video"),
+                "higgsfield": tr("Higgsfield Content Factory"),
                 "loomloom": tr("Shengsuan Cloud AI Video"),
                 "openai_image": tr("OpenAI Compatible Text-to-Image"),
                 "codex_image": tr("codex.image.label"),
@@ -6098,6 +6162,8 @@ def _render_video_settings(panel, params):
                 st.caption(tr("Metaso MiniMax H3 Help"))
             if params.video_source == "muapi":
                 st.caption(tr("MuAPI AI Video Help"))
+            if params.video_source == "higgsfield":
+                st.caption(tr("Higgsfield Content Factory Help"))
             if params.video_source == "local":
                 # Streamlit 的文件类型校验对扩展名大小写敏感，这里同时放行大小写两种形式。
                 local_file_types = sorted(
@@ -6282,6 +6348,13 @@ def _render_video_settings(panel, params):
                         muapi.DEFAULT_MAX_DURATION_SECONDS + 1,
                     )
                 )
+            elif params.video_source == "higgsfield":
+                video_clip_durations = list(
+                    range(
+                        higgsfield.DEFAULT_MIN_DURATION_SECONDS,
+                        higgsfield.DEFAULT_MAX_DURATION_SECONDS + 1,
+                    )
+                )
             else:
                 video_clip_durations = [2, 3, 4, 5, 6, 7, 8, 9, 10]
             params.video_clip_duration = stable_selectbox(
@@ -6291,7 +6364,7 @@ def _render_video_settings(panel, params):
                     "video_clip_duration",
                     video_clip_durations,
                     5
-                    if params.video_source in {"metaso_minimax", "muapi"}
+                    if params.video_source in {"metaso_minimax", "muapi", "higgsfield"}
                     else 3,
                 ),
                 key="video_clip_duration_select",
@@ -6412,6 +6485,8 @@ def _render_video_settings(panel, params):
                 _render_metaso_minimax_video_settings(params)
             if params.video_source == "muapi":
                 _render_muapi_video_settings(params)
+            if params.video_source == "higgsfield":
+                _render_higgsfield_video_settings(params)
     return uploaded_files
 
 
@@ -6694,6 +6769,29 @@ def _render_muapi_video_settings(params):
         tr("Confirm MuAPI Charge"),
         key="muapi_confirm_charge",
         help=tr("Confirm MuAPI Charge Help"),
+    )
+
+
+def _render_higgsfield_video_settings(params):
+    """Show an estimated Higgsfield clip count and require billing consent."""
+    clip_duration = max(int(params.video_clip_duration or 1), 1)
+    video_count = max(int(params.video_count or 1), 1)
+    if estimated_range := _estimate_voiceover_duration_range(
+        str(params.video_script or ""), params.voice_rate
+    ):
+        min_clips = max(math.ceil(estimated_range[0] * video_count / clip_duration), 1)
+        max_clips = max(
+            math.ceil(estimated_range[1] * video_count / clip_duration), min_clips
+        )
+        st.warning(
+            tr("Higgsfield Billing Notice").format(min=min_clips, max=max_clips)
+        )
+    else:
+        st.warning(tr("Higgsfield Billing Notice Without Script"))
+    st.checkbox(
+        tr("Confirm Higgsfield Charge"),
+        key="higgsfield_confirm_charge",
+        help=tr("Confirm Higgsfield Charge Help"),
     )
 
 
@@ -9064,6 +9162,7 @@ def _render_generation_controls(
             "ofox",
             "metaso_minimax",
             "muapi",
+            "higgsfield",
             "loomloom",
             "openai_image",
             "codex_image",
@@ -9192,6 +9291,20 @@ def _render_generation_controls(
         ):
             _remove_active_generation_task(task_id)
             st.error(tr("Confirm MuAPI Charge Required"))
+            st.stop()
+
+        if params.video_source == "higgsfield" and not (
+            higgsfield.is_enabled(config.snapshot_config_with_pending(config.app))
+        ):
+            _remove_active_generation_task(task_id)
+            st.error(tr("Please Configure Higgsfield"))
+            st.stop()
+
+        if params.video_source == "higgsfield" and not st.session_state.get(
+            "higgsfield_confirm_charge", False
+        ):
+            _remove_active_generation_task(task_id)
+            st.error(tr("Confirm Higgsfield Charge Required"))
             st.stop()
 
         if params.video_source == "codex_image":

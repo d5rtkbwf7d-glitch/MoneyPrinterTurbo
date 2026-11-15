@@ -36,6 +36,7 @@ SUPPORTED_SOURCES = {
     "ofox",
     "metaso_minimax",
     "muapi",
+    "higgsfield",
     "infistar",
     "jalapeno",
     # Keep this list aligned with ``_CLI_VIDEO_SOURCES`` in cli.py. A source that
@@ -492,6 +493,25 @@ def missing_config(config_path: Path, cli_args: list[str]) -> tuple[str, list[st
             missing.append("muapi_api_key")
         if not has_cli_option(cli_args, "--confirm-muapi-charge"):
             missing.append("confirm_muapi_charge")
+    elif source == "higgsfield":
+        key = _plain_config_value(text, "higgsfield_api_key").strip()
+        secret = _plain_config_value(text, "higgsfield_api_secret").strip()
+        has_key = (
+            (_has_configured_value(key) and (_has_configured_value(secret) or ":" in key))
+            or bool(os.environ.get("HF_KEY", "").strip())
+            or bool(
+                os.environ.get("HF_API_KEY", "").strip()
+                and os.environ.get("HF_API_SECRET", "").strip()
+            )
+        )
+        if not has_key:
+            missing.append("higgsfield_api_key")
+        if not _has_configured_value(
+            _plain_config_value(text, "higgsfield_video_model").strip()
+        ):
+            missing.append("higgsfield_video_model")
+        if not has_cli_option(cli_args, "--confirm-higgsfield-charge"):
+            missing.append("confirm_higgsfield_charge")
     elif source == "infistar":
         # 视频凭据独立于同品牌 LLM，预检必须与 infistar_video.get_api_key 一致。
         value = (

@@ -48,6 +48,7 @@ _CLI_VIDEO_SOURCES = (
     "jalapeno",
     "metaso_minimax",
     "muapi",
+    "higgsfield",
     "openai_image",
     "codex_image",
     "local",
@@ -420,6 +421,15 @@ Batch manifests:
         help=(
             "confirm that MuAPI video generation creates paid tasks; required "
             "with --video-source muapi for materials or video output"
+        ),
+    )
+    material_group.add_argument(
+        "--confirm-higgsfield-charge",
+        action="store_true",
+        help=(
+            "confirm that Higgsfield generation creates paid tasks (a still "
+            "frame plus a video per clip); required with --video-source "
+            "higgsfield for materials or video output"
         ),
     )
 
@@ -801,6 +811,15 @@ Batch manifests:
     ):
         parser.error(
             "--confirm-muapi-charge is required with --video-source muapi"
+        )
+    if (
+        not args.batch_file
+        and args.video_source == "higgsfield"
+        and stage_requires_materials
+        and not args.confirm_higgsfield_charge
+    ):
+        parser.error(
+            "--confirm-higgsfield-charge is required with --video-source higgsfield"
         )
 
     if (not args.batch_file and args.video_source == "infistar"
@@ -1215,6 +1234,7 @@ def _validate_batch_task_params(
     muapi_charge_confirmed: bool,
     infistar_charge_confirmed: bool = False,
     jalapeno_charge_confirmed: bool = False,
+    higgsfield_charge_confirmed: bool = False,
 ) -> None:
     if not params.video_subject.strip() and not params.video_script.strip():
         raise ValueError("one of video_subject or video_script is required")
@@ -1283,6 +1303,14 @@ def _validate_batch_task_params(
         and not muapi_charge_confirmed
     ):
         raise ValueError("--confirm-muapi-charge is required for MuAPI video generation")
+    if (
+        params.video_source == "higgsfield"
+        and stop_at in {"materials", "video"}
+        and not higgsfield_charge_confirmed
+    ):
+        raise ValueError(
+            "--confirm-higgsfield-charge is required for Higgsfield video generation"
+        )
 
     if (params.video_source == "infistar" and stop_at in {"materials", "video"}
             and not infistar_charge_confirmed):
@@ -1406,6 +1434,7 @@ def _build_batch_tasks(args: argparse.Namespace) -> list[VideoParams]:
                 muapi_charge_confirmed=args.confirm_muapi_charge,
                 infistar_charge_confirmed=args.confirm_infistar_charge,
                 jalapeno_charge_confirmed=args.confirm_jalapeno_charge,
+                higgsfield_charge_confirmed=args.confirm_higgsfield_charge,
             )
         except (TypeError, ValueError) as exc:
             raise ValueError(f"invalid batch task {index}: {exc}") from exc

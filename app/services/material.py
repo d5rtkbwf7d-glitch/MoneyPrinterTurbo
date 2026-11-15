@@ -31,6 +31,7 @@ from app.services import (
     material_cache,
     material_upload,
     metaso_minimax,
+    higgsfield,
     muapi,
     ofox,
     task_artifacts,
@@ -2450,6 +2451,17 @@ def download_videos(
             max_clip_duration=max_clip_duration,
             material_directory=material_directory,
         )
+    if source == "higgsfield":
+        # Higgsfield 每段素材（可选的静帧 + 视频）都是付费任务，逐段按需生成，
+        # 覆盖配音时长后立即停止。
+        return _download_videos_higgsfield_on_demand(
+            task_id=task_id,
+            search_terms=search_terms,
+            video_aspect=video_aspect,
+            audio_duration=audio_duration,
+            max_clip_duration=max_clip_duration,
+            material_directory=material_directory,
+        )
     if source == "muapi":
         # MuAPI 的模型端点会创建异步付费任务。逐段提交并在覆盖配音时长后
         # 停止，避免把未使用的脚本关键词也发送到远端。
@@ -3064,6 +3076,109 @@ def _download_videos_muapi_on_demand(
             break
 
     logger.success(f"generated and downloaded {len(video_paths)} MuAPI videos")
+    _persist_material_sources(task_id, material_sources)
+    return video_paths
+
+
+def _download_videos_higgsfield_on_demand(
+    *,
+    task_id: str,
+    search_terms: List[str],
+    video_aspect: VideoAspect,
+    audio_duration: float,
+    max_clip_duration: int,
+    material_directory: str,
+) -> List[str]:
+    """Generate styled Higgsfield clips until the narration is covered."""
+    video_paths: List[str] = []
+    material_sources: list[dict[str, Any]] = []
+
+    try:
+        required_duration = float(audio_duration)
+    except (TypeError, ValueError) as exc:
+        raise higgsfield.HiggsfieldError(
+            "Higgsfield audio duration must be a finite number"
+        ) from exc
+    if not math.isfinite(required_duration):
+        raise higgsfield.HiggsfieldError("Higgsfield audio duration must be a finite number")
+    if required_duration <= 0:
+        logger.warning(
+            "skip Higgsfield paid generation because required audio duration "
+            f"is not positive: duration={required_duration}"
+        )
+        _persist_material_sources(task_id, material_sources)
+        return video_paths
+    try:
+        clip_duration = int(max_clip_duration)
+    except (TypeError, ValueError, OverflowError) as exc:
+        raise higgsfield.HiggsfieldError(
+            "Higgsfield clip duration must be a positive integer"
+        ) from exc
+    if clip_duration <= 0:
+        raise higgsfield.HiggsfieldError("Higgsfield clip duration must be a positive integer")
+
+    def remote_id(item: MaterialInfo) -> str:
+        info = item.source_info if isinstance(item.source_info, dict) else {}
+        return str(info.get("asset_id") or "").strip()
+
+    total_duration = 0.0
+    for search_term in search_terms:
+        try:
+            video_items = higgsfield.generate_videos(
+                search_term=search_term,
+                minimum_duration=clip_duration,
+                video_aspect=video_aspect,
+            )
+        except higgsfield.HiggsfieldError as exc:
+            # Stop on any error: an ambiguous paid submission must not be
+            # followed by more paid submissions.
+            logger.error(
+                "stop submitting Higgsfield tasks: "
+                f"task_id={exc.task_id or 'unknown'}, detail={exc}"
+            )
+            _persist_material_sources(task_id, material_sources)
+            raise
+
+        for item in video_items:
+            saved_video_path = _save_generated_video_with_retry(
+                item.url, material_directory, "higgsfield"
+            )
+            if not saved_video_path:
+                _persist_material_sources(task_id, material_sources)
+                raise higgsfield.HiggsfieldDownloadError(
+                    "Higgsfield generated a paid video but the result could not "
+                    f"be downloaded: id={remote_id(item) or 'unknown'}",
+                    task_id=remote_id(item),
+                )
+            logger.info(f"video saved: {saved_video_path}")
+            video_paths.append(saved_video_path)
+            try:
+                material_sources.append(_material_source_record(item, saved_video_path))
+            except Exception as source_error:
+                logger.warning(
+                    "failed to prepare generated material source record: "
+                    f"provider=higgsfield, error={type(source_error).__name__}"
+                )
+            try:
+                downloaded_duration = _get_downloaded_video_duration(saved_video_path)
+            except Exception as duration_error:
+                _persist_material_sources(task_id, material_sources)
+                raise higgsfield.HiggsfieldDownloadError(
+                    "Higgsfield generated a paid video but its duration could "
+                    f"not be measured: id={remote_id(item) or 'unknown'}",
+                    task_id=remote_id(item),
+                ) from duration_error
+            total_duration += min(clip_duration, downloaded_duration)
+            if total_duration >= required_duration:
+                break
+        if total_duration >= required_duration:
+            logger.info(
+                "generated Higgsfield materials cover the required duration; "
+                f"generated={total_duration:.1f}s, required={required_duration:.1f}s"
+            )
+            break
+
+    logger.success(f"generated and downloaded {len(video_paths)} Higgsfield videos")
     _persist_material_sources(task_id, material_sources)
     return video_paths
 

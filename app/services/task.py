@@ -28,6 +28,7 @@ from app.services import (
     loomloom,
     material,
     metaso_minimax,
+    higgsfield,
     muapi,
     ofox,
     sonilo,
@@ -101,7 +102,7 @@ _VIDEO_MUSIC_PROVIDERS = {
 
 _SUPPORTED_VIDEO_SOURCES = frozenset({
     "pexels", "pixabay", "coverr", "local", "wavespeed",
-    "volcengine_seedance", "ofox", "metaso_minimax", "muapi",
+    "volcengine_seedance", "ofox", "metaso_minimax", "muapi", "higgsfield",
     "loomloom", "openai_image", "codex_image", "infistar", "jalapeno",
 })
 
@@ -918,6 +919,15 @@ def get_video_materials(
                 details={"infistar_task_id": remote_task_id} if remote_task_id else None,
             )
             return None
+        except higgsfield.HiggsfieldError as exc:
+            remote_task_id = str(getattr(exc, "task_id", "") or "").strip()
+            _mark_task_failed(
+                task_id,
+                "materials",
+                str(exc),
+                details={"higgsfield_request_id": remote_task_id} if remote_task_id else None,
+            )
+            return None
         except muapi.MuAPIError as exc:
             # MuAPI tasks are billable after acceptance.  Preserve the remote
             # request ID on any ambiguous or post-completion failure so the
@@ -1654,6 +1664,18 @@ def _run_pipeline(
             task_id,
             "preflight",
             "MuAPI video generation requires a MuAPI API key",
+        )
+
+    if (
+        stop_at in {"materials", "video"}
+        and params.video_source == "higgsfield"
+        and not higgsfield.is_enabled()
+    ):
+        return _mark_task_failed(
+            task_id,
+            "preflight",
+            "Higgsfield video generation requires: "
+            + ", ".join(higgsfield.missing_settings() or ["valid higgsfield settings"]),
         )
 
     if (

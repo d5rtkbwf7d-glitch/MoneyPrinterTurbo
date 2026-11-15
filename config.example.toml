@@ -89,7 +89,7 @@ tls_verify = true
 # -----------------------------------------------------------------------------
 
 # Available values: "pexels", "pixabay", "coverr", "wavespeed",
-# "volcengine_seedance", "ofox", "metaso_minimax", "muapi", "loomloom",
+# "volcengine_seedance", "ofox", "metaso_minimax", "muapi", "higgsfield", "loomloom",
 # "openai_image", "infistar", "local".
 # "wavespeed" generates brand-new clips with WaveSpeed AI text-to-video models
 # instead of searching stock footage; generation is billed per request.
@@ -197,6 +197,33 @@ muapi_min_duration = 3
 muapi_max_duration = 12
 muapi_poll_interval = 5
 muapi_run_timeout = 1800
+
+# Higgsfield Cloud "content factory" source (video_source = "higgsfield").
+# Each clip = one styled shot prompt -> optional still frame (text-to-image)
+# -> video model. Create an API key and secret at https://cloud.higgsfield.ai.
+# When empty, HF_KEY ("key:secret") or HF_API_KEY + HF_API_SECRET are used.
+# Generation is billed per request; the CLI requires --confirm-higgsfield-charge.
+higgsfield_api_key = ""
+higgsfield_api_secret = ""
+higgsfield_base_url = "https://api.higgsfield.ai"
+# Required. The model path of a video model from your Higgsfield Cloud
+# dashboard, e.g. an image-to-video model. It is a path, not a full URL.
+higgsfield_video_model = ""
+# Still-frame model. Set to "" to skip the still and send text-to-video only.
+higgsfield_image_model = "bytedance/seedream/v4/text-to-image"
+# Request field the video model reads the still frame from.
+higgsfield_image_field = "image_url"
+# Extra model-specific arguments as a JSON object, e.g. '{"resolution": "720p"}'.
+higgsfield_video_extra_args = ""
+higgsfield_image_extra_args = ""
+# Shared art direction for every clip. Presets: "paper_diorama", "photoreal_ugc",
+# "neon_night", "none". A non-empty higgsfield_style_prompt overrides the preset.
+higgsfield_style_preset = "paper_diorama"
+higgsfield_style_prompt = ""
+higgsfield_min_duration = 5
+higgsfield_max_duration = 10
+higgsfield_poll_interval = 5
+higgsfield_run_timeout = 1800
 
 # Metaso proxies the MiniMax H3 V2 asynchronous video API. Register and obtain
 # an independent API key through https://metaso.cn/minimax-h3/?s=MPT. Its mk-*

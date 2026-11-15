@@ -15,6 +15,7 @@ from app.services import (
     loomloom,
     material,
     metaso_minimax,
+    higgsfield,
     muapi,
     ofox,
     volcengine_seedance,
@@ -101,6 +102,7 @@ def configured_material_providers(settings, groups, codex_connected=False):
             "infistar": infistar_video.is_enabled(settings),
             "jalapeno": jalapeno_video.is_enabled(settings),
             "muapi": muapi.is_enabled(settings),
+            "higgsfield": higgsfield.is_enabled(settings),
             "openai_image": material.is_openai_image_enabled(settings),
             "codex_image": bool(
                 codex_connected and _text(settings.get("codex_image_model_name"))
